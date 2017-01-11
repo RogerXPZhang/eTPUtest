@@ -1,0 +1,1509 @@
+Link map of __start
+  1] __start (func,global) found in Runtime.PPCEABI.VS.UC.a __start.o
+   2] __init_registers (func,weak) found in Runtime.PPCEABI.VS.UC.a __start.o
+    3] _stack_addr found as linker generated symbol
+    3] _SDA2_BASE_ found as linker generated symbol
+    3] _SDA_BASE_ found as linker generated symbol
+   2] __init_hardware (func,global) found in __ppc_eabi_init.o 
+   2] __init_data (func,weak) found in Runtime.PPCEABI.VS.UC.a __start.o
+    3] _rom_copy_info (object,global) found in Linker Generated Symbol File 
+    3] __copy_rom_section (func,global) found in Runtime.PPCEABI.VS.UC.a __start.o
+     4] _savegpr_30 (notype,global) found in Runtime.PPCEABI.VS.UC.a runtime.o
+      5] __save_gpr (func,local) found in Runtime.PPCEABI.VS.UC.a runtime.o
+     4] memcpy (func,global) found in Runtime.PPCEABI.VS.UC.a __mem.o
+     4] __flush_cache (func,global) found in __ppc_eabi_init.o 
+     4] __restore_gpr_30_exit (func,global) found in Runtime.PPCEABI.VS.UC.a runtime.o
+      5] __finish_restore_frame_and_exit (notype,global) found in Runtime.PPCEABI.VS.UC.a runtime.o
+       6] __restore_gpr_31_exit (func,global) found in Runtime.PPCEABI.VS.UC.a runtime.o
+        7] __finish_restore_frame_and_exit2 (notype,global) found in Runtime.PPCEABI.VS.UC.a runtime.o
+         8] __restore_frame_and_exit (func,global) found in Runtime.PPCEABI.VS.UC.a runtime.o
+    3] _bss_init_info (object,global) found in Linker Generated Symbol File 
+    3] memset (func,global) found in Runtime.PPCEABI.VS.UC.a __mem.o
+     4] __fill_mem (func,global) found in Runtime.PPCEABI.VS.UC.a __mem.o
+   2] __init_user (func,global) found in __ppc_eabi_init.o 
+    3] FlashConfig (func,global) found in __ppc_eabi_init.o 
+     4] @22 (object,local) found in __ppc_eabi_init.o 
+   2] main (func,global) found in main.o 
+    3] cnt10msTask (object,global) found in main.o 
+    3] cntLED (object,global) found in main.o 
+    3] ParaInitPowerOn (func,global) found in main.o 
+    3] HWInitPowerOn (func,global) found in main.o 
+     4] initSysclk (func,global) found in main.o 
+     4] init_SinWAVE (func,global) found in Sinwave.o 
+      5] SIN_DATA_RAW (object,global) found in Sinwave.o 
+      5] SIN_DATA (object,global) found in Sinwave.o 
+      5] varFrequency (object,global) found in Sinwave.o 
+      5] sinon (object,global) found in Sinwave.o 
+       6] sinAlpha1 (object,global) found in Sinwave.o 
+       6] sinAlpha2 (object,global) found in Sinwave.o 
+     4] initESCI_A (func,global) found in Serial.o 
+    3] INTInitPowerOn (func,global) found in main.o 
+     4] init_PIT_BackgroundTask (func,global) found in main.o 
+     4] init_PIT_Sinwave (func,global) found in Sinwave.o 
+     4] PIT1_ISR (func,global) found in main.o 
+     4] INTC_InstallINTCInterruptHandler (func,global) found in IntcInterrupts.o 
+      5] INTCInterruptsHandlerTable (object,global) found in IntcInterrupts.o 
+     4] PIT0_ISR (func,global) found in Sinwave.o 
+      5] flgPWMfreq (object,global) found in Sinwave.o 
+     4] PIT2_ISR (func,global) found in Sinwave.o 
+     4] SCI_A_ISR (func,global) found in Serial.o 
+      5] cntSCIRx (object,global) found in Serial.o 
+      5] buffSCI (object,global) found in Serial.o 
+    3] enableIrq (func,global) found in main.o 
+    3] sInitWord (object,global) found in main.o 
+    3] @594 (object,local) found in main.o 
+    3] sprintf (func,global) found in MSL_C.PPCEABI.bare.VS.UC.a printf.o
+     4] vsnprintf (func,global) found in MSL_C.PPCEABI.bare.VS.UC.a printf.o
+      5] _savegpr_29 (notype,global) found in Runtime.PPCEABI.VS.UC.a runtime.o
+      5] __StringWrite (func,global) found in MSL_C.PPCEABI.bare.VS.UC.a printf.o
+      5] __pformatter (func,local) found in MSL_C.PPCEABI.bare.VS.UC.a printf.o
+       6] __create_frame_and_save_gpr_16 (func,global) found in Runtime.PPCEABI.VS.UC.a runtime.o
+        7] __save_lr (notype,global) found in Runtime.PPCEABI.VS.UC.a runtime.o
+         8] __create_frame (func,global) found in Runtime.PPCEABI.VS.UC.a runtime.o
+       6] @1095 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a printf.o
+       6] strchr (func,global) found in MSL_C.PPCEABI.bare.VS.UC.a string.o
+       6] strlen (func,weak) found in Runtime.PPCEABI.VS.UC.a __mem.o
+       6] parse_format (func,local) found in MSL_C.PPCEABI.bare.VS.UC.a printf.o
+        7] _savegpr_28 (notype,global) found in Runtime.PPCEABI.VS.UC.a runtime.o
+        7] __va_arg (func,global) found in Runtime.PPCEABI.VS.UC.a __va_arg.o
+        7] isdigit (func,weak) found in MSL_C.PPCEABI.bare.VS.UC.a ctype.o
+         8] _current_locale (object,global) found in MSL_C.PPCEABI.bare.VS.UC.a locale.o
+          9] _loc_coll_C (object,global) found in MSL_C.PPCEABI.bare.VS.UC.a locale.o
+           10] char_coll_tableC (object,global) found in MSL_C.PPCEABI.bare.VS.UC.a locale.o
+          9] _loc_ctyp_C (object,global) found in MSL_C.PPCEABI.bare.VS.UC.a locale.o
+           10] __ctype_mapC (object,global) found in MSL_C.PPCEABI.bare.VS.UC.a ctype.o
+           10] __upper_mapC (object,global) found in MSL_C.PPCEABI.bare.VS.UC.a ctype.o
+           10] __lower_mapC (object,global) found in MSL_C.PPCEABI.bare.VS.UC.a ctype.o
+           10] __wctype_mapC (object,global) found in MSL_C.PPCEABI.bare.VS.UC.a wctype.o
+           10] __wupper_mapC (object,global) found in MSL_C.PPCEABI.bare.VS.UC.a wctype.o
+           10] __wlower_mapC (object,global) found in MSL_C.PPCEABI.bare.VS.UC.a wctype.o
+           10] __mbtowc_noconv (func,global) found in MSL_C.PPCEABI.bare.VS.UC.a mbstring.o
+           10] __wctomb_noconv (func,global) found in MSL_C.PPCEABI.bare.VS.UC.a mbstring.o
+          9] _loc_mon_C (object,global) found in MSL_C.PPCEABI.bare.VS.UC.a locale.o
+           10] @17 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a locale.o
+          9] _loc_num_C (object,global) found in MSL_C.PPCEABI.bare.VS.UC.a locale.o
+           10] @16 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a locale.o
+          9] _loc_tim_C (object,global) found in MSL_C.PPCEABI.bare.VS.UC.a locale.o
+           10] @18 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a locale.o
+           10] @19 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a locale.o
+           10] @20 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a locale.o
+           10] @21 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a locale.o
+           10] @22 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a locale.o
+           10] @23 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a locale.o
+           10] @24 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a locale.o
+        7] @268 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a printf.o
+        7] __restore_gpr_28_exit (func,global) found in Runtime.PPCEABI.VS.UC.a runtime.o
+       6] longlong2str (func,local) found in MSL_C.PPCEABI.bare.VS.UC.a printf.o
+        7] __create_frame_and_save_gpr_22 (func,global) found in Runtime.PPCEABI.VS.UC.a runtime.o
+        7] set_base (func,local) found in MSL_C.PPCEABI.bare.VS.UC.a printf.o
+        7] __mod2u (func,global) found in Runtime.PPCEABI.VS.UC.a runtime.o
+        7] __div2u (func,global) found in Runtime.PPCEABI.VS.UC.a runtime.o
+        7] justify_conversion (func,local) found in MSL_C.PPCEABI.bare.VS.UC.a printf.o
+        7] __restore_gpr_22_exit (func,global) found in Runtime.PPCEABI.VS.UC.a runtime.o
+       6] long2str (func,local) found in MSL_C.PPCEABI.bare.VS.UC.a printf.o
+        7] _savegpr_24 (notype,global) found in Runtime.PPCEABI.VS.UC.a runtime.o
+        7] __restore_gpr_24_exit (func,global) found in Runtime.PPCEABI.VS.UC.a runtime.o
+       6] float2str (func,local) found in MSL_C.PPCEABI.bare.VS.UC.a printf.o
+        7] __create_frame_and_save_gpr_27 (func,global) found in Runtime.PPCEABI.VS.UC.a runtime.o
+        7] __lconv (object,global) found in MSL_C.PPCEABI.bare.VS.UC.a locale.o
+        7] __num2dec (func,global) found in MSL_C.PPCEABI.bare.VS.UC.a ansi_fp.o
+         8] __num2dec_internal (func,local) found in MSL_C.PPCEABI.bare.VS.UC.a ansi_fp.o
+          9] __signbitd (func,global) found in MSL_C.PPCEABI.bare.VS.UC.a math_api.o
+          9] _d_feq (func,global) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+           10] d_compare (notype,local) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+            11] _d_for (func,global) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+             12] load_rounding_0x2000 (func,local) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+              13] __SoftFPSCR (object,local) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+          9] __fpclassifyd (func,global) found in MSL_C.PPCEABI.bare.VS.UC.a math_api.o
+          9] frexp (func,global) found in MSL_C.PPCEABI.bare.VS.UC.a s_frexp.o
+           10] _d_mul (func,global) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+            11] proloque (func,local) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+            11] d_unpack_2 (notype,local) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+             12] d_unpack_1 (func,local) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+            11] load_rounding_cr_simple (notype,local) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+            11] load_rounding_0x0200 (notype,local) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+            11] d_double_result_and_exit (notype,local) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+            11] load_rounding_0x0a00 (notype,local) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+            11] epiloque (notype,local) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+            11] load_rounding_0x1200 (notype,local) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+          9] __msl_count_trailing_zero_double (func,local) found in MSL_C.PPCEABI.bare.VS.UC.a ansi_fp.o
+           10] __msl_count_trailing_zero64 (func,weak) found in MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+           10] >>> UNREFERENCED DUPLICATE __msl_count_trailing_zero64
+           10] >>> (func,weak) found in MSL_C.PPCEABI.bare.VS.UC.a math_float.o
+           10] >>> (func,weak) found in MSL_C.PPCEABI.bare.VS.UC.a math_longdouble.o
+           10] >>> (func,weak) found in MSL_C.PPCEABI.bare.VS.UC.a math_ppc.o
+          9] __two_exp (func,local) found in MSL_C.PPCEABI.bare.VS.UC.a ansi_fp.o
+           10] __create_frame_and_save_gpr_30 (func,global) found in Runtime.PPCEABI.VS.UC.a runtime.o
+           10] @246 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a ansi_fp.o
+           10] __str2dec (func,local) found in MSL_C.PPCEABI.bare.VS.UC.a ansi_fp.o
+            11] __dorounddecup (func,local) found in MSL_C.PPCEABI.bare.VS.UC.a ansi_fp.o
+           10] @247 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a ansi_fp.o
+           10] @248 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a ansi_fp.o
+           10] __timesdec (func,local) found in MSL_C.PPCEABI.bare.VS.UC.a ansi_fp.o
+            11] __create_frame_and_save_gpr_25 (func,global) found in Runtime.PPCEABI.VS.UC.a runtime.o
+            11] __restore_gpr_25_exit (func,global) found in Runtime.PPCEABI.VS.UC.a runtime.o
+          9] ldexp (func,global) found in MSL_C.PPCEABI.bare.VS.UC.a s_ldexp.o
+           10] @67 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a s_ldexp.o
+           10] @66 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a s_ldexp.o
+           10] _d_add (func,global) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+            11] d_coerce_result_precalculated_data (notype,local) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+            11] d_coerce_result_prepare (notype,local) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+            11] d_result_is_x (notype,local) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+            11] d_result_is_number_x (notype,local) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+            11] d_y_is_NaN (notype,local) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+            11] d_both_NaNs (notype,local) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+            11] d_x_is_NaN (notype,local) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+            11] d_result_is_INF (notype,local) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+            11] d_result_is_Invalid (notype,local) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+           10] copysign (func,global) found in MSL_C.PPCEABI.bare.VS.UC.a s_copysign.o
+           10] @68 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a s_ldexp.o
+           10] __restore_gpr_29_exit (func,global) found in Runtime.PPCEABI.VS.UC.a runtime.o
+          9] _d_dtoull (func,global) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+           10] d_toshortX_common (notype,local) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+            11] _d_dtoi (func,global) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+             12] Xtoshort_common (notype,local) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+              13] _f_ftoi (func,global) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+               14] f_unpack_1 (func,local) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+               14] Xtolong_common (notype,local) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+          9] __ull2dec (func,local) found in MSL_C.PPCEABI.bare.VS.UC.a ansi_fp.o
+          9] __restore_gpr_27_exit (func,global) found in Runtime.PPCEABI.VS.UC.a runtime.o
+         8] __rounddec (func,local) found in MSL_C.PPCEABI.bare.VS.UC.a ansi_fp.o
+          9] __must_round (func,local) found in MSL_C.PPCEABI.bare.VS.UC.a ansi_fp.o
+        7] _d_flt (func,global) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+        7] isupper (func,weak) found in MSL_C.PPCEABI.bare.VS.UC.a ctype.o
+        7] @539 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a printf.o
+        7] strcpy (func,global) found in MSL_C.PPCEABI.bare.VS.UC.a string.o
+        7] @540 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a printf.o
+        7] @541 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a printf.o
+        7] @542 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a printf.o
+        7] @543 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a printf.o
+        7] @544 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a printf.o
+        7] @545 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a printf.o
+        7] @546 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a printf.o
+        7] round_decimal (func,local) found in MSL_C.PPCEABI.bare.VS.UC.a printf.o
+       6] double2hex (func,local) found in MSL_C.PPCEABI.bare.VS.UC.a printf.o
+        7] __create_frame_and_save_gpr_26 (func,global) found in Runtime.PPCEABI.VS.UC.a runtime.o
+        7] fabsl (func,weak) found in MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+        7] >>> UNREFERENCED DUPLICATE fabsl
+        7] >>> (func,weak) found in MSL_C.PPCEABI.bare.VS.UC.a math_float.o
+        7] >>> (func,weak) found in MSL_C.PPCEABI.bare.VS.UC.a math_longdouble.o
+        7] >>> (func,weak) found in MSL_C.PPCEABI.bare.VS.UC.a math_ppc.o
+         8] fabs (func,global) found in MSL_C.PPCEABI.bare.VS.UC.a s_fabs.o
+        7] _d_fne (func,global) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+        7] __restore_gpr_26_exit (func,global) found in Runtime.PPCEABI.VS.UC.a runtime.o
+       6] __msl_runtime_constraint_violation_s (func,global) found in MSL_C.PPCEABI.bare.VS.UC.a secure_error.o
+        7] __msl_constraint_handler (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a secure_error.o
+        7] ignore_handler_s (func,global) found in MSL_C.PPCEABI.bare.VS.UC.a secure_error.o
+       6] @1089 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a printf.o
+       6] wcstombs (func,global) found in MSL_C.PPCEABI.bare.VS.UC.a mbstring.o
+        7] _savegpr_27 (notype,global) found in Runtime.PPCEABI.VS.UC.a runtime.o
+        7] wctomb (func,global) found in MSL_C.PPCEABI.bare.VS.UC.a mbstring.o
+        7] strncpy (func,global) found in MSL_C.PPCEABI.bare.VS.UC.a string.o
+       6] @1090 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a printf.o
+       6] memchr (func,global) found in MSL_C.PPCEABI.bare.VS.UC.a mem.o
+       6] __restore_gpr_16_exit (func,global) found in Runtime.PPCEABI.VS.UC.a runtime.o
+    3] SCI_transmitData (func,global) found in Serial.o 
+    3] startSinWAVE (func,global) found in Sinwave.o 
+     4] OFFSETA (object,global) found in Sinwave.o 
+     4] indexA (object,global) found in Sinwave.o 
+     4] OFFSETB (object,global) found in Sinwave.o 
+     4] indexB (object,global) found in Sinwave.o 
+     4] OFFSETC (object,global) found in Sinwave.o 
+     4] indexC (object,global) found in Sinwave.o 
+    3] sinWaveTask (func,global) found in Sinwave.o 
+    3] SCI_readDataTask (func,global) found in Serial.o 
+    3] sCommandParse (func,global) found in main.o 
+     4] command (object,global) found in main.o 
+     4] @550 (object,local) found in main.o 
+     4] _d_itod (func,global) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+      5] d_Xtod_common (notype,local) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+       6] _d_lltod (func,global) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+     4] pow (func,global) found in MSL_C.PPCEABI.bare.VS.UC.a w_pow.o
+      5] __ieee754_pow (func,global) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+       6] __create_frame_and_save_gpr_15 (func,global) found in Runtime.PPCEABI.VS.UC.a runtime.o
+       6] @276 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+       6] ...rodata.0 (notype,local) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+        7] bp (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+        7] dp_h (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+        7] dp_l (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+        7] .rodata (section,local) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+       6] @278 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+       6] @294 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+       6] @296 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+       6] @277 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+       6] _d_sub (func,global) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+        7] d_add_common (notype,local) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+       6] _d_div (func,global) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+        7] divu_l_r3_r4_r5 (func,local) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+        7] d_result_is_zero (notype,local) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+        7] load_rounding_cr (notype,local) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+       6] sqrt (func,global) found in MSL_C.PPCEABI.bare.VS.UC.a sqrt.VS.UC.o
+        7] errno (object,global) found in MSL_C.PPCEABI.bare.VS.UC.a errno.o
+        7] _fp_get_fpscr (func,global) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+       6] __float_nan (object,global) found in MSL_C.PPCEABI.bare.VS.UC.a float.o
+       6] _f_ftod (func,global) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+        7] d_coerce_result (notype,local) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+       6] @281 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+       6] @280 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+       6] @279 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+       6] @282 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+       6] @284 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+       6] @283 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+       6] @290 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+       6] @289 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+       6] @288 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+       6] @287 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+       6] @286 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+       6] @285 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+       6] @291 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+       6] @293 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+       6] @292 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+       6] @295 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+       6] _d_fgt (func,global) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+       6] _d_fle (func,global) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+       6] @297 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+       6] @299 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+       6] @298 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+       6] @304 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+       6] @303 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+       6] @302 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+       6] @301 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+       6] @300 (object,local) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+       6] scalbn (func,global) found in MSL_C.PPCEABI.bare.VS.UC.a math_sun.o
+       6] >>> UNREFERENCED DUPLICATE scalbn
+       6] >>> (func,global) found in MSL_C.PPCEABI.bare.VS.UC.a math_ppc.o
+       6] __restore_gpr_15_exit (func,global) found in Runtime.PPCEABI.VS.UC.a runtime.o
+     4] _d_utod (func,global) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+      5] d_itod_common (notype,local) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+     4] _d_dtou (func,global) found in Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+   2] exit (func,weak) found in __ppc_eabi_init.o 
+    3] _ExitProcess (func,weak) found in __ppc_eabi_init.o 
+  1] INTC_INTCInterruptHandler (func,global) found in IntcInterrupts.o 
+  1] EXCEP_DefaultExceptionHandler (func,global) found in Exceptions.o 
+  1] @552 (object,local) found in main.o 
+   2] @551 (object,local) found in main.o 
+  1] @558 (object,local) found in main.o 
+   2] @557 (object,local) found in main.o 
+  1] @568 (object,local) found in main.o 
+   2] @567 (object,local) found in main.o 
+  1] @596 (object,local) found in main.o 
+   2] @595 (object,local) found in main.o 
+  1] @6 (object,local) found in Exceptions.o 
+   2] @5 (object,local) found in Exceptions.o 
+  1] @13 (object,local) found in IntcInterrupts.o 
+   2] @12 (object,local) found in IntcInterrupts.o 
+  1] @84 (object,local) found in Sinwave.o 
+   2] @83 (object,local) found in Sinwave.o 
+  1] @108 (object,local) found in Sinwave.o 
+   2] @107 (object,local) found in Sinwave.o 
+  1] @140 (object,local) found in Sinwave.o 
+   2] @139 (object,local) found in Sinwave.o 
+  1] @23 (object,local) found in Serial.o 
+   2] @22 (object,local) found in Serial.o 
+  1] __init_cpp_exceptions_reference (object,global) found in Runtime.PPCEABI.VS.UC.a __init_cpp_exceptions.o
+   2] __init_cpp_exceptions (func,global) found in Runtime.PPCEABI.VS.UC.a __init_cpp_exceptions.o
+    3] fragmentID (object,local) found in Runtime.PPCEABI.VS.UC.a __init_cpp_exceptions.o
+    3] __exception_info_constants (func,weak) found in Runtime.PPCEABI.VS.UC.a __init_cpp_exceptions.o
+     4] _eti_init_info (object,global) found in Linker Generated Symbol File 
+    3] __register_fragment (func,global) found in Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+     4] fragmentinfo (object,local) found in Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  1] __fini_cpp_exceptions_reference (object,global) found in Runtime.PPCEABI.VS.UC.a __init_cpp_exceptions.o
+   2] __fini_cpp_exceptions (func,global) found in Runtime.PPCEABI.VS.UC.a __init_cpp_exceptions.o
+    3] __unregister_fragment (func,global) found in Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  1] _ctors (notype,global) found in Linker Generated Symbol File 
+  1] _ctors$99 (object,global) found in Linker Generated Symbol File 
+  1] _dtors (notype,global) found in Linker Generated Symbol File 
+  1] _dtors$99 (object,global) found in Linker Generated Symbol File 
+    3] .text (section,local) found in main.o 
+    3] .text.608 (notype,local) found in main.o 
+    3] .text (section,local) found in Sinwave.o 
+    3] .text.158 (notype,local) found in Sinwave.o 
+    3] .text (section,local) found in Serial.o 
+    3] .text.47 (notype,local) found in Serial.o 
+    3] .init (section,local) found in Runtime.PPCEABI.VS.UC.a __start.o
+    3] .init.130 (notype,local) found in Runtime.PPCEABI.VS.UC.a __start.o
+    3] .text (section,local) found in Runtime.PPCEABI.VS.UC.a __va_arg.o
+    3] .text.40 (notype,local) found in Runtime.PPCEABI.VS.UC.a __va_arg.o
+    3] .text (section,local) found in Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+    3] .text.1683 (notype,local) found in Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+    3] .text (section,local) found in Runtime.PPCEABI.VS.UC.a runtime.o
+    3] .text.205 (notype,local) found in Runtime.PPCEABI.VS.UC.a runtime.o
+    3] .text (section,local) found in MSL_C.PPCEABI.bare.VS.UC.a ansi_fp.o
+    3] .text.702 (notype,local) found in MSL_C.PPCEABI.bare.VS.UC.a ansi_fp.o
+    3] .text (section,local) found in MSL_C.PPCEABI.bare.VS.UC.a ctype.o
+    3] .text.225 (notype,local) found in MSL_C.PPCEABI.bare.VS.UC.a ctype.o
+    3] .text (section,local) found in MSL_C.PPCEABI.bare.VS.UC.a locale.o
+    3] .text.258 (notype,local) found in MSL_C.PPCEABI.bare.VS.UC.a locale.o
+    3] .text (section,local) found in MSL_C.PPCEABI.bare.VS.UC.a mbstring.o
+    3] .text.835 (notype,local) found in MSL_C.PPCEABI.bare.VS.UC.a mbstring.o
+    3] .text (section,local) found in MSL_C.PPCEABI.bare.VS.UC.a mem.o
+    3] .text.182 (notype,local) found in MSL_C.PPCEABI.bare.VS.UC.a mem.o
+    3] .text (section,local) found in MSL_C.PPCEABI.bare.VS.UC.a printf.o
+    3] .text.1442 (notype,local) found in MSL_C.PPCEABI.bare.VS.UC.a printf.o
+    3] .text (section,local) found in MSL_C.PPCEABI.bare.VS.UC.a string.o
+    3] .text.960 (notype,local) found in MSL_C.PPCEABI.bare.VS.UC.a string.o
+    3] .text (section,local) found in MSL_C.PPCEABI.bare.VS.UC.a wctype.o
+    3] .text.306 (notype,local) found in MSL_C.PPCEABI.bare.VS.UC.a wctype.o
+    3] .text (section,local) found in MSL_C.PPCEABI.bare.VS.UC.a math_api.o
+    3] .text.133 (notype,local) found in MSL_C.PPCEABI.bare.VS.UC.a math_api.o
+    3] .text (section,local) found in MSL_C.PPCEABI.bare.VS.UC.a math_sun.o
+    3] .text.626 (notype,local) found in MSL_C.PPCEABI.bare.VS.UC.a math_sun.o
+    3] .text (section,local) found in MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+    3] .text.637 (notype,local) found in MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+    3] .text (section,local) found in MSL_C.PPCEABI.bare.VS.UC.a secure_error.o
+    3] .text.75 (notype,local) found in MSL_C.PPCEABI.bare.VS.UC.a secure_error.o
+    3] .text (section,local) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+    3] .text.313 (notype,local) found in MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+    3] .text (section,local) found in MSL_C.PPCEABI.bare.VS.UC.a s_copysign.o
+    3] .text.47 (notype,local) found in MSL_C.PPCEABI.bare.VS.UC.a s_copysign.o
+    3] .text (section,local) found in MSL_C.PPCEABI.bare.VS.UC.a s_frexp.o
+    3] .text.59 (notype,local) found in MSL_C.PPCEABI.bare.VS.UC.a s_frexp.o
+    3] .text (section,local) found in MSL_C.PPCEABI.bare.VS.UC.a s_ldexp.o
+    3] .text.73 (notype,local) found in MSL_C.PPCEABI.bare.VS.UC.a s_ldexp.o
+    3] .text (section,local) found in MSL_C.PPCEABI.bare.VS.UC.a w_pow.o
+    3] .text.47 (notype,local) found in MSL_C.PPCEABI.bare.VS.UC.a w_pow.o
+    3] .text (section,local) found in MSL_C.PPCEABI.bare.VS.UC.a s_fabs.o
+    3] .text.46 (notype,local) found in MSL_C.PPCEABI.bare.VS.UC.a s_fabs.o
+    3] .text (section,local) found in MPC5634M_MLQC80_HWInit.o 
+    3] .text.34 (notype,local) found in MPC5634M_MLQC80_HWInit.o 
+    3] .text (section,local) found in Runtime.PPCEABI.VS.UC.a CPlusLibPPC.o
+    3] .text.169 (notype,local) found in Runtime.PPCEABI.VS.UC.a CPlusLibPPC.o
+    3] .text (section,local) found in MSL_C.PPCEABI.bare.VS.UC.a arith.o
+    3] .text.332 (notype,local) found in MSL_C.PPCEABI.bare.VS.UC.a arith.o
+
+
+.init section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+  00000000 0000bc 4000f000 00000220  1 .init 	Linker Generated Symbol File 
+  00000000 00009c 4000f000 00000220  4 _rom_copy_info 	Linker Generated Symbol File 
+  0000009c 000020 4000f09c 000002bc  4 _bss_init_info 	Linker Generated Symbol File 
+
+
+.init_vle section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+  00000000 00002e 4000f0bc 000002dc  1 .init 	__ppc_eabi_init.o 
+  00000000 00000c 4000f0bc 000002dc  2 __init_hardware 	__ppc_eabi_init.o 
+  0000000c 000022 4000f0c8 000002e8  2 __flush_cache 	__ppc_eabi_init.o 
+  0000002e 000002 4000f0ec 0000030c  4 *fill*
+  00000030 0000ea 4000f0ec 0000030c  1 .init 	Runtime.PPCEABI.VS.UC.a __start.o
+  00000030 000048 4000f0ec 0000030c  4 __start 	Runtime.PPCEABI.VS.UC.a __start.o
+  00000078 00002c 4000f134 00000354  2 __copy_rom_section 	Runtime.PPCEABI.VS.UC.a __start.o
+  UNUSED   00000e ........ ........    __init_bss_section Runtime.PPCEABI.VS.UC.a __start.o
+  000000a4 00001a 4000f160 00000380  2 __init_registers 	Runtime.PPCEABI.VS.UC.a __start.o
+  000000be 00005c 4000f17a 0000039a  2 __init_data 	Runtime.PPCEABI.VS.UC.a __start.o
+  0000011a 000000 4000f1d6 000003f6  1 .init.130 	Runtime.PPCEABI.VS.UC.a __start.o
+  0000011a 0000ca 4000f1d6 000003f6  1 .init 	Runtime.PPCEABI.VS.UC.a __mem.o
+  0000011a 000038 4000f1d6 000003f6  2 memcpy 	Runtime.PPCEABI.VS.UC.a __mem.o
+  00000152 000078 4000f20e 0000042e  2 __fill_mem 	Runtime.PPCEABI.VS.UC.a __mem.o
+  000001ca 00001a 4000f286 000004a6  2 memset 	Runtime.PPCEABI.VS.UC.a __mem.o
+  000001e4 00000e 4000f2a0 000004c0  1 .init 	Runtime.PPCEABI.VS.UC.a __init_cpp_exceptions.o
+  000001e4 00000e 4000f2a0 000004c0  2 __exception_info_constants 	Runtime.PPCEABI.VS.UC.a __init_cpp_exceptions.o
+  UNUSED   000028 ........ ........    __find_exception_addresses Runtime.PPCEABI.VS.UC.a __init_cpp_exceptions.o
+
+
+.__exception_handlers section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+  00000000 000002 40010000 000004d0  1 .__exception_handlers 	Exceptions.o 
+  00000000 000002 40010000 000004d0 16 EXCEP_DefaultExceptionHandler 	Exceptions.o 
+  00000002 00000e 40010010 000004e0 16 *fill*
+  00000010 000096 40010010 000004e0  1 .__exception_handlers 	IntcInterrupts.o 
+  00000010 000096 40010010 000004e0 16 INTC_INTCInterruptHandler 	IntcInterrupts.o 
+
+
+.text section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+
+
+.text_vle section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+  00000000 00041a 40000000 00000580  1 .text 	main.o 
+  00000000 000032 40000000 00000580  2 initSysclk 	main.o 
+  00000032 000018 40000032 000005b2  2 enableIrq 	main.o 
+  0000004a 000024 4000004a 000005ca  2 init_PIT_BackgroundTask 	main.o 
+  UNUSED   000036 ........ ........    printSCI main.o 
+  0000006e 00002c 4000006e 000005ee  2 PIT1_ISR 	main.o 
+  0000009a 000240 4000009a 0000061a  2 sCommandParse 	main.o 
+  000002da 000026 400002da 0000085a  2 HWInitPowerOn 	main.o 
+  00000300 000002 40000300 00000880  2 ParaInitPowerOn 	main.o 
+  00000302 000060 40000302 00000882  2 INTInitPowerOn 	main.o 
+  UNUSED   000024 ........ ........    showControlMenu main.o 
+  00000362 0000b8 40000362 000008e2  2 main 	main.o 
+  0000041a 000000 4000041a 0000099a  1 .text.608 	main.o 
+  0000041a 000064 4000041a 0000099a  1 .text 	__ppc_eabi_init.o 
+  0000041a 00003c 4000041a 0000099a  2 FlashConfig 	__ppc_eabi_init.o 
+  00000456 000012 40000456 000009d6  2 __init_user 	__ppc_eabi_init.o 
+  00000468 000014 40000468 000009e8  2 exit 	__ppc_eabi_init.o 
+  0000047c 000002 4000047c 000009fc  2 _ExitProcess 	__ppc_eabi_init.o 
+  0000047e 000000 4000047e 000009fe  1 .text 	MPC5634M_MLQC80_HWInit.o 
+  UNUSED   00001e ........ ........    INIT_Derivative MPC5634M_MLQC80_HWInit.o 
+  UNUSED   000012 ........ ........    INIT_ExternalBusAndMemory MPC5634M_MLQC80_HWInit.o 
+  UNUSED   00000c ........ ........    InitPCRs MPC5634M_MLQC80_HWInit.o 
+  UNUSED   000064 ........ ........    __initSIUExtBusInterface MPC5634M_MLQC80_HWInit.o 
+  UNUSED   000002 ........ ........    __initEBIChipSelects MPC5634M_MLQC80_HWInit.o 
+  UNUSED   000016 ........ ........    WriteMMUTableEntry MPC5634M_MLQC80_HWInit.o 
+  UNUSED   000006 ........ ........    __initMMUExternalMemory MPC5634M_MLQC80_HWInit.o 
+  0000047e 000000 4000047e 000009fe  1 .text.34 	MPC5634M_MLQC80_HWInit.o 
+  0000047e 000030 4000047e 000009fe  1 .text 	IntcInterrupts.o 
+  0000047e 000030 4000047e 000009fe  2 INTC_InstallINTCInterruptHandler 	IntcInterrupts.o 
+  UNUSED   000028 ........ ........    INTC_InitINTCInterrupts IntcInterrupts.o 
+  000004ae 000596 400004ae 00000a2e  1 .text 	Sinwave.o 
+  000004ae 00003a 400004ae 00000a2e  2 init_PIT_Sinwave 	Sinwave.o 
+  000004e8 000020 400004e8 00000a68  2 PIT2_ISR 	Sinwave.o 
+  00000508 000020 40000508 00000a88  2 PIT0_ISR 	Sinwave.o 
+  UNUSED   000056 ........ ........    setFrequencySinWAVE Sinwave.o 
+  UNUSED   000102 ........ ........    setAmplitudeSinWAVE Sinwave.o 
+  00000528 0001ec 40000528 00000aa8  2 init_SinWAVE 	Sinwave.o 
+  00000714 0001b6 40000714 00000c94  2 startSinWAVE 	Sinwave.o 
+  UNUSED   000046 ........ ........    stopSinWAVE Sinwave.o 
+  000008ca 00017a 400008ca 00000e4a  2 sinWaveTask 	Sinwave.o 
+  00000a44 000000 40000a44 00000fc4  1 .text.158 	Sinwave.o 
+  00000a44 0000d6 40000a44 00000fc4  1 .text 	Serial.o 
+  00000a44 00002c 40000a44 00000fc4  2 initESCI_A 	Serial.o 
+  00000a70 000042 40000a70 00000ff0  2 SCI_transmitData 	Serial.o 
+  00000ab2 000034 40000ab2 00001032  2 SCI_readDataTask 	Serial.o 
+  00000ae6 000034 40000ae6 00001066  2 SCI_A_ISR 	Serial.o 
+  00000b1a 000000 40000b1a 0000109a  1 .text.47 	Serial.o 
+  00000b1a 000012 40000b1a 0000109a  1 .text 	Runtime.PPCEABI.VS.UC.a __mem.o
+  00000b1a 000012 40000b1a 0000109a  2 strlen 	Runtime.PPCEABI.VS.UC.a __mem.o
+  00000b2c 000078 40000b2c 000010ac  1 .text 	Runtime.PPCEABI.VS.UC.a __va_arg.o
+  00000b2c 000078 40000b2c 000010ac  2 __va_arg 	Runtime.PPCEABI.VS.UC.a __va_arg.o
+  00000ba4 000000 40000ba4 00001124  1 .text.40 	Runtime.PPCEABI.VS.UC.a __va_arg.o
+  00000ba4 000000 40000ba4 00001124  1 .text 	Runtime.PPCEABI.VS.UC.a CPlusLibPPC.o
+  UNUSED   000018 ........ ........    __copy Runtime.PPCEABI.VS.UC.a CPlusLibPPC.o
+  UNUSED   000044 ........ ........    __init_arr Runtime.PPCEABI.VS.UC.a CPlusLibPPC.o
+  UNUSED   000052 ........ ........    __new_arr Runtime.PPCEABI.VS.UC.a CPlusLibPPC.o
+  UNUSED   00004c ........ ........    __del_arr Runtime.PPCEABI.VS.UC.a CPlusLibPPC.o
+  UNUSED   000034 ........ ........    __dc_arr Runtime.PPCEABI.VS.UC.a CPlusLibPPC.o
+  00000ba4 000000 40000ba4 00001124  1 .text.169 	Runtime.PPCEABI.VS.UC.a CPlusLibPPC.o
+  00000ba4 00003a 40000ba4 00001124  1 .text 	Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  00000ba4 00001e 40000ba4 00001124  2 __register_fragment 	Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  00000bc2 00001c 40000bc2 00001142  2 __unregister_fragment 	Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   00005a ........ ........    ExPPC_FindExceptionFragment__FPcP12FragmentInfo Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   0000e2 ........ ........    ExPPC_FindExceptionRecord__FPcP15MWExceptionInfo Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   000006 ........ ........    ExPPC_PopR31__FPcP15MWExceptionInfo Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   000012 ........ ........    ExPPC_CurrentAction__FPC14ActionIterator Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   000168 ........ ........    ExPPC_NextAction__FP14ActionIterator Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   00004a ........ ........    ExPPC_PopStackFrame__FP12ThrowContextP15MWExceptionInfo Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   000268 ........ ........    ExPPC_UnwindStack__FP12ThrowContextP15MWExceptionInfoPv Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   000046 ........ ........    ExPPC_DeletePointerCond_32__FP12ThrowContextPC23ex_deletepointercond_32 Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   00004e ........ ........    ExPPC_DeletePointerCond__FP12ThrowContextPC20ex_deletepointercond Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   000026 ........ ........    ExPPC_DeletePointer_32__FP12ThrowContextPC19ex_deletepointer_32 Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   00002a ........ ........    ExPPC_DeletePointer__FP12ThrowContextPC16ex_deletepointer Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   000058 ........ ........    ExPPC_DestroyMemberArray_32__FP12ThrowContextPC24ex_destroymemberarray_32 Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   00005c ........ ........    ExPPC_DestroyMemberArray__FP12ThrowContextPC21ex_destroymemberarray Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   00004a ........ ........    ExPPC_DestroyMemberCond_32__FP12ThrowContextPC23ex_destroymembercond_32 Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   000052 ........ ........    ExPPC_DestroyMemberCond__FP12ThrowContextPC20ex_destroymembercond Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   00006e ........ ........    ExPPC_DestroyVLA__FP12ThrowContextPC13ex_destroyvla Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   00004c ........ ........    ExPPC_DestroyBaseVTT__FP12ThrowContextPC17ex_destroybasevtt Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   00002c ........ ........    ExPPC_DestroyMember_32__FP12ThrowContextPC19ex_destroymember_32 Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   000030 ........ ........    ExPPC_DestroyMember__FP12ThrowContextPC16ex_destroymember Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   00002c ........ ........    ExPPC_DestroyBase_32__FP12ThrowContextPC19ex_destroymember_32 Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   000030 ........ ........    ExPPC_DestroyBase__FP12ThrowContextPC16ex_destroymember Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   000040 ........ ........    ExPPC_DestroyLocalArray_32__FP12ThrowContextPC23ex_destroylocalarray_32 Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   000042 ........ ........    ExPPC_DestroyLocalArray__FP12ThrowContextPC20ex_destroylocalarray Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   000028 ........ ........    ExPPC_DestroyLocalPointer_32__FP12ThrowContextPC25ex_destroylocalpointer_32 Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   00002c ........ ........    ExPPC_DestroyLocalPointer__FP12ThrowContextPC22ex_destroylocalpointer Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   000038 ........ ........    ExPPC_DestroyLocalCond_32__FP12ThrowContextPC22ex_destroylocalcond_32 Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   00003e ........ ........    ExPPC_DestroyLocalCond__FP12ThrowContextPC19ex_destroylocalcond Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   000014 ........ ........    ExPPC_DestroyLocal_32__FP12ThrowContextPC18ex_destroylocal_32 Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   000016 ........ ........    ExPPC_DestroyLocal__FP12ThrowContextPC15ex_destroylocal Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   000044 ........ ........    ExPPC_IsInSpecification__FPcP16ex_specification Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   0000aa ........ ........    __unexpected Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   000024 ........ ........    __dt__Q23std13bad_exceptionFv Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   00000c ........ ........    __ct__Q23std13bad_exceptionFv Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   000022 ........ ........    ExPPC_LongJump__FP12ThrowContextPvPv Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   000042 ........ ........    ExPPC_HandleUnexpected__FP12ThrowContextP15MWExceptionInfoP16ex_specification Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   000228 ........ ........    ExPPC_ThrowHandler__FP12ThrowContext Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   000028 ........ ........    __as__15MWExceptionInfoFRC15MWExceptionInfo Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   000052 ........ ........    __throw Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   00001c ........ ........    __end__catch Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   000086 ........ ........    __uncaught_exception_helper__FP12ThrowContext Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   000028 ........ ........    __uncaught_exception Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   00000a ........ ........    what__Q23std13bad_exceptionCFv Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  00000bde 000000 40000bde 0000115e  1 .text.1683 	Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  00000bde 00028c 40000bde 0000115e  1 .text 	Runtime.PPCEABI.VS.UC.a runtime.o
+  00000bde 00004a 40000bde 0000115e  2 __save_gpr 	Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savegpr_14 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _save32gpr_14 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savegpr_15 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _save32gpr_15 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savegpr_16 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _save32gpr_16 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savegpr_17 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _save32gpr_17 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savegpr_18 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _save32gpr_18 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savegpr_19 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _save32gpr_19 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savegpr_20 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _save32gpr_20 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savegpr_21 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _save32gpr_21 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savegpr_22 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _save32gpr_22 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savegpr_23 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _save32gpr_23 Runtime.PPCEABI.VS.UC.a runtime.o
+  00000c06 000000 40000c06 00001186    _savegpr_24 (entry of __save_gpr) 	Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _save32gpr_24 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savegpr_25 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _save32gpr_25 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savegpr_26 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _save32gpr_26 Runtime.PPCEABI.VS.UC.a runtime.o
+  00000c12 000000 40000c12 00001192    _savegpr_27 (entry of __save_gpr) 	Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _save32gpr_27 Runtime.PPCEABI.VS.UC.a runtime.o
+  00000c16 000000 40000c16 00001196    _savegpr_28 (entry of __save_gpr) 	Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _save32gpr_28 Runtime.PPCEABI.VS.UC.a runtime.o
+  00000c1a 000000 40000c1a 0000119a    _savegpr_29 (entry of __save_gpr) 	Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _save32gpr_29 Runtime.PPCEABI.VS.UC.a runtime.o
+  00000c1e 000000 40000c1e 0000119e    _savegpr_30 (entry of __save_gpr) 	Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _save32gpr_30 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savegpr_31 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _save32gpr_31 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   00004a ........ ........    __restore_gpr Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restgpr_14 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _rest32gpr_14 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restgpr_15 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _rest32gpr_15 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restgpr_16 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _rest32gpr_16 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restgpr_17 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _rest32gpr_17 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restgpr_18 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _rest32gpr_18 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restgpr_19 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _rest32gpr_19 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restgpr_20 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _rest32gpr_20 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restgpr_21 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _rest32gpr_21 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restgpr_22 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _rest32gpr_22 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restgpr_23 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _rest32gpr_23 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restgpr_24 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _rest32gpr_24 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restgpr_25 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _rest32gpr_25 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restgpr_26 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _rest32gpr_26 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restgpr_27 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _rest32gpr_27 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restgpr_28 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _rest32gpr_28 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restgpr_29 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _rest32gpr_29 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restgpr_30 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _rest32gpr_30 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restgpr_31 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000000 ........ ........    _rest32gpr_31 Runtime.PPCEABI.VS.UC.a runtime.o
+  00000c28 000008 40000c28 000011a8  2 __restore_frame_and_exit 	Runtime.PPCEABI.VS.UC.a runtime.o
+  00000c2a 000000 40000c2a 000011aa    __finish_restore_frame_and_exit2 (entry of __restore_frame_and_exit) 	Runtime.PPCEABI.VS.UC.a runtime.o
+  00000c30 00000a 40000c30 000011b0  2 __restore_gpr_31_exit 	Runtime.PPCEABI.VS.UC.a runtime.o
+  00000c36 000000 40000c36 000011b6    __finish_restore_frame_and_exit (entry of __restore_gpr_31_exit) 	Runtime.PPCEABI.VS.UC.a runtime.o
+  00000c3a 000008 40000c3a 000011ba  2 __restore_gpr_30_exit 	Runtime.PPCEABI.VS.UC.a runtime.o
+  00000c42 000008 40000c42 000011c2  2 __restore_gpr_29_exit 	Runtime.PPCEABI.VS.UC.a runtime.o
+  00000c4a 000008 40000c4a 000011ca  2 __restore_gpr_28_exit 	Runtime.PPCEABI.VS.UC.a runtime.o
+  00000c52 000008 40000c52 000011d2  2 __restore_gpr_27_exit 	Runtime.PPCEABI.VS.UC.a runtime.o
+  00000c5a 000008 40000c5a 000011da  2 __restore_gpr_26_exit 	Runtime.PPCEABI.VS.UC.a runtime.o
+  00000c62 00000a 40000c62 000011e2  2 __restore_gpr_25_exit 	Runtime.PPCEABI.VS.UC.a runtime.o
+  00000c6c 000008 40000c6c 000011ec  2 __restore_gpr_24_exit 	Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000008 ........ ........    __restore_gpr_23_exit Runtime.PPCEABI.VS.UC.a runtime.o
+  00000c74 000008 40000c74 000011f4  2 __restore_gpr_22_exit 	Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000008 ........ ........    __restore_gpr_21_exit Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000008 ........ ........    __restore_gpr_20_exit Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000008 ........ ........    __restore_gpr_19_exit Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000008 ........ ........    __restore_gpr_18_exit Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000008 ........ ........    __restore_gpr_17_exit Runtime.PPCEABI.VS.UC.a runtime.o
+  00000c7c 000008 40000c7c 000011fc  2 __restore_gpr_16_exit 	Runtime.PPCEABI.VS.UC.a runtime.o
+  00000c84 000008 40000c84 00001204  2 __restore_gpr_15_exit 	Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000008 ........ ........    __restore_gpr_14_exit Runtime.PPCEABI.VS.UC.a runtime.o
+  00000c8c 00000c 40000c8c 0000120c  2 __create_frame 	Runtime.PPCEABI.VS.UC.a runtime.o
+  00000c92 000000 40000c92 00001212    __save_lr (entry of __create_frame) 	Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   00000c ........ ........    __create_frame_and_save_gpr_31 Runtime.PPCEABI.VS.UC.a runtime.o
+  00000c98 00000c 40000c98 00001218  2 __create_frame_and_save_gpr_30 	Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   00000c ........ ........    __create_frame_and_save_gpr_29 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   00000c ........ ........    __create_frame_and_save_gpr_28 Runtime.PPCEABI.VS.UC.a runtime.o
+  00000ca4 00000c 40000ca4 00001224  2 __create_frame_and_save_gpr_27 	Runtime.PPCEABI.VS.UC.a runtime.o
+  00000cb0 00000c 40000cb0 00001230  2 __create_frame_and_save_gpr_26 	Runtime.PPCEABI.VS.UC.a runtime.o
+  00000cbc 00000c 40000cbc 0000123c  2 __create_frame_and_save_gpr_25 	Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   00000c ........ ........    __create_frame_and_save_gpr_24 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   00000c ........ ........    __create_frame_and_save_gpr_23 Runtime.PPCEABI.VS.UC.a runtime.o
+  00000cc8 00000c 40000cc8 00001248  2 __create_frame_and_save_gpr_22 	Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   00000c ........ ........    __create_frame_and_save_gpr_21 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   00000c ........ ........    __create_frame_and_save_gpr_20 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   00000c ........ ........    __create_frame_and_save_gpr_19 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   00000c ........ ........    __create_frame_and_save_gpr_18 Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   00000c ........ ........    __create_frame_and_save_gpr_17 Runtime.PPCEABI.VS.UC.a runtime.o
+  00000cd4 00000c 40000cd4 00001254  2 __create_frame_and_save_gpr_16 	Runtime.PPCEABI.VS.UC.a runtime.o
+  00000ce0 00000c 40000ce0 00001260  2 __create_frame_and_save_gpr_15 	Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   00000c ........ ........    __create_frame_and_save_gpr_14 Runtime.PPCEABI.VS.UC.a runtime.o
+  00000cec 0000c4 40000cec 0000126c  2 __div2u 	Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   000108 ........ ........    __div2i Runtime.PPCEABI.VS.UC.a runtime.o
+  00000db0 0000ba 40000db0 00001330  2 __mod2u 	Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   0000e2 ........ ........    __mod2i Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   00001a ........ ........    __shl2i Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   00001a ........ ........    __shr2u Runtime.PPCEABI.VS.UC.a runtime.o
+  UNUSED   00001c ........ ........    __shr2i Runtime.PPCEABI.VS.UC.a runtime.o
+  00000e6a 000000 40000e6a 000013ea  1 .text.205 	Runtime.PPCEABI.VS.UC.a runtime.o
+  00000e6a 000050 40000e6a 000013ea  1 .text 	Runtime.PPCEABI.VS.UC.a __init_cpp_exceptions.o
+  00000e6a 00002e 40000e6a 000013ea  2 __init_cpp_exceptions 	Runtime.PPCEABI.VS.UC.a __init_cpp_exceptions.o
+  00000e98 000022 40000e98 00001418  2 __fini_cpp_exceptions 	Runtime.PPCEABI.VS.UC.a __init_cpp_exceptions.o
+  00000eba 000006 40000ec0 00001440 16 *fill*
+  00000ec0 000b26 40000ec0 00001440  1 .text 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000018 ........ ........    _fp_round Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  00000ec0 00000a 40000ec0 00001440 16 _fp_get_fpscr 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   00000a ........ ........    _fp_set_fpscr Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000006 ........ ........    _f_utof Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000028 ........ ........    _f_itof Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000000 ........ ........    f_itof_common_with_proloque Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000000 ........ ........    f_itof_common Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000000 ........ ........    f_itof_go_coerce Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000006 ........ ........    _f_ulltof Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   00003c ........ ........    _f_lltof Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000000 ........ ........    f_lltof_common Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000044 ........ ........    _f_qtof Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000000 ........ ........    _d_dtof Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  00000ed0 000006 40000ed0 00001450 16 _d_utod 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  00000ee0 000012 40000ee0 00001460 16 _d_itod 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  00000eea 000000 40000eea 0000146a    d_itod_common (entry of _d_itod) 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000006 ........ ........    _d_ulltod Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  00000f00 000052 40000f00 00001480 16 _d_lltod 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  00000f10 000000 40000f10 00001490    d_Xtod_common (entry of _d_lltod) 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000000 ........ ........    d_lltod_common Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000000 ........ ........    d_lltod_go_coerce Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  00000f60 000046 40000f60 000014e0 16 _f_ftod 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000000 ........ ........    _f_ftoq Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000008 ........ ........    _f_ftoll Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000006 ........ ........    _f_ftoull Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000006 ........ ........    _f_ftou Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  00000fb0 000092 40000fb0 00001530 16 _f_ftoi 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000000 ........ ........    f_toshortX_common Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  00000fcc 000000 40000fcc 0000154c    Xtoshort_common (entry of _f_ftoi) 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000008 ........ ........    _d_dtoll Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  00001050 000006 40001050 000015d0 16 _d_dtoull 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  00001060 000006 40001060 000015e0 16 _d_dtou 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  00001070 0000c2 40001070 000015f0 16 _d_dtoi 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  00001072 000000 40001072 000015f2    d_toshortX_common (entry of _d_dtoi) 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  00001086 000000 40001086 00001606    Xtolong_common (entry of _d_dtoi) 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000006 ........ ........    _d_dtoq Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000006 ........ ........    _d_qtod Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000006 ........ ........    _f_cmp Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000006 ........ ........    _f_cmpe Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000006 ........ ........    _f_feq Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000006 ........ ........    _f_fne Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000006 ........ ........    _f_flt Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000006 ........ ........    _f_fle Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000006 ........ ........    _f_fgt Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000006 ........ ........    _f_fge Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000006 ........ ........    _f_fun Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   00003e ........ ........    _f_for Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000000 ........ ........    f_compare Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000006 ........ ........    _d_cmp Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000006 ........ ........    _d_cmpe Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  00001140 000006 40001140 000016c0 16 _d_feq 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  00001150 000006 40001150 000016d0 16 _d_fne 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  00001160 000006 40001160 000016e0 16 _d_flt 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  00001170 000006 40001170 000016f0 16 _d_fle 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  00001180 000006 40001180 00001700 16 _d_fgt 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000006 ........ ........    _d_fge Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000006 ........ ........    _d_fun Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  00001190 000114 40001190 00001710 16 _d_for 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  00001192 000000 40001192 00001712    d_compare (entry of _d_for) 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000000 ........ ........    compare_dispatch Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000000 ........ ........    f_compare_un Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000006 ........ ........    _f_neg Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000000 ........ ........    _d_neg Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000156 ........ ........    _f_mul Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000000 ........ ........    f_coerce_result Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000000 ........ ........    f_coerce_result_precalculated_data Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000000 ........ ........    f_result_is_INF Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000000 ........ ........    f_result_is_zero Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000000 ........ ........    f_both_NaNs Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000000 ........ ........    f_x_is_NaN Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000000 ........ ........    f_result_is_Invalid Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000000 ........ ........    f_y_is_NaN Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000000 ........ ........    f_result_is_x Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   00006a ........ ........    _f_div Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000008 ........ ........    _f_sub Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000116 ........ ........    _f_add Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000000 ........ ........    f_add_common Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  000012b0 000008 400012b0 00001830 16 _d_sub 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  000012c0 00018a 400012c0 00001840 16 _d_add 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  000012c2 000000 400012c2 00001842    d_add_common (entry of _d_add) 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  00001450 0001ee 40001450 000019d0 16 _d_mul 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  000014b8 000000 400014b8 00001a38    d_coerce_result_prepare (entry of _d_mul) 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  000014bc 000000 400014bc 00001a3c    d_coerce_result (entry of _d_mul) 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  000014c0 000000 400014c0 00001a40    d_coerce_result_precalculated_data (entry of _d_mul) 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  00001586 000000 40001586 00001b06    d_double_result_and_exit (entry of _d_mul) 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  00001592 000000 40001592 00001b12    d_result_is_INF (entry of _d_mul) 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  000015e4 000000 400015e4 00001b64    d_result_is_zero (entry of _d_mul) 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  000015f0 000000 400015f0 00001b70    d_both_NaNs (entry of _d_mul) 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  000015f6 000000 400015f6 00001b76    d_x_is_NaN (entry of _d_mul) 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  000015fc 000000 400015fc 00001b7c    d_result_is_Invalid (entry of _d_mul) 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  00001608 000000 40001608 00001b88    d_y_is_NaN (entry of _d_mul) 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  00001624 000000 40001624 00001ba4    d_result_is_x (entry of _d_mul) 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  00001626 000000 40001626 00001ba6    d_result_is_number_x (entry of _d_mul) 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  00001640 0000a2 40001640 00001bc0 16 divu_l_r3_r4_r5 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  000016f0 00010a 400016f0 00001c70 16 _d_div 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  00001800 00009a 40001800 00001d80 16 f_unpack_1 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  UNUSED   000000 ........ ........    f_unpack_2 Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  000018a0 0000f6 400018a0 00001e20 16 d_unpack_1 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  000018a8 000000 400018a8 00001e28    d_unpack_2 (entry of d_unpack_1) 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  000019a0 00002e 400019a0 00001f20 16 load_rounding_0x2000 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  000019a4 000000 400019a4 00001f24    load_rounding_0x0200 (entry of load_rounding_0x2000) 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  000019a8 000000 400019a8 00001f28    load_rounding_0x1200 (entry of load_rounding_0x2000) 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  000019ac 000000 400019ac 00001f2c    load_rounding_0x0a00 (entry of load_rounding_0x2000) 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  000019b2 000000 400019b2 00001f32    load_rounding_cr_simple (entry of load_rounding_0x2000) 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  000019b4 000000 400019b4 00001f34    load_rounding_cr (entry of load_rounding_0x2000) 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  000019d0 000016 400019d0 00001f50 16 proloque 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  000019da 000000 400019da 00001f5a    epiloque (entry of proloque) 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  000019e6 000462 400019e6 00001f66  1 .text 	MSL_C.PPCEABI.bare.VS.UC.a ansi_fp.o
+  000019e6 000044 400019e6 00001f66  2 __must_round 	MSL_C.PPCEABI.bare.VS.UC.a ansi_fp.o
+  00001a2a 000032 40001a2a 00001faa  2 __dorounddecup 	MSL_C.PPCEABI.bare.VS.UC.a ansi_fp.o
+  00001a5c 000032 40001a5c 00001fdc  2 __rounddec 	MSL_C.PPCEABI.bare.VS.UC.a ansi_fp.o
+  00001a8e 000074 40001a8e 0000200e  2 __ull2dec 	MSL_C.PPCEABI.bare.VS.UC.a ansi_fp.o
+  00001b02 0000f6 40001b02 00002082  2 __timesdec 	MSL_C.PPCEABI.bare.VS.UC.a ansi_fp.o
+  00001bf8 000058 40001bf8 00002178  2 __str2dec 	MSL_C.PPCEABI.bare.VS.UC.a ansi_fp.o
+  00001c50 0000ac 40001c50 000021d0  2 __two_exp 	MSL_C.PPCEABI.bare.VS.UC.a ansi_fp.o
+  UNUSED   00008e ........ ........    __equals_dec MSL_C.PPCEABI.bare.VS.UC.a ansi_fp.o
+  UNUSED   0000a0 ........ ........    __less_dec MSL_C.PPCEABI.bare.VS.UC.a ansi_fp.o
+  UNUSED   0001be ........ ........    __minus_dec MSL_C.PPCEABI.bare.VS.UC.a ansi_fp.o
+  00001cfc 0000c4 40001cfc 0000227c  2 __num2dec_internal 	MSL_C.PPCEABI.bare.VS.UC.a ansi_fp.o
+  00001dc0 000016 40001dc0 00002340  2 __msl_count_trailing_zero_double 	MSL_C.PPCEABI.bare.VS.UC.a ansi_fp.o
+  00001dd6 000072 40001dd6 00002356  2 __num2dec 	MSL_C.PPCEABI.bare.VS.UC.a ansi_fp.o
+  UNUSED   000428 ........ ........    __dec2num MSL_C.PPCEABI.bare.VS.UC.a ansi_fp.o
+  00001e48 000000 40001e48 000023c8  1 .text.702 	MSL_C.PPCEABI.bare.VS.UC.a ansi_fp.o
+  00001e48 000000 40001e48 000023c8  1 .text 	MSL_C.PPCEABI.bare.VS.UC.a arith.o
+  UNUSED   00000c ........ ........    abs MSL_C.PPCEABI.bare.VS.UC.a arith.o
+  UNUSED   000034 ........ ........    div MSL_C.PPCEABI.bare.VS.UC.a arith.o
+  UNUSED   00000c ........ ........    labs MSL_C.PPCEABI.bare.VS.UC.a arith.o
+  UNUSED   000026 ........ ........    llabs MSL_C.PPCEABI.bare.VS.UC.a arith.o
+  UNUSED   000034 ........ ........    ldiv MSL_C.PPCEABI.bare.VS.UC.a arith.o
+  UNUSED   0000fa ........ ........    lldiv MSL_C.PPCEABI.bare.VS.UC.a arith.o
+  UNUSED   00002e ........ ........    __msl_add MSL_C.PPCEABI.bare.VS.UC.a arith.o
+  UNUSED   00002e ........ ........    __msl_ladd MSL_C.PPCEABI.bare.VS.UC.a arith.o
+  UNUSED   0000be ........ ........    __lladd MSL_C.PPCEABI.bare.VS.UC.a arith.o
+  UNUSED   00004a ........ ........    __msl_mul MSL_C.PPCEABI.bare.VS.UC.a arith.o
+  UNUSED   00004a ........ ........    __msl_lmul MSL_C.PPCEABI.bare.VS.UC.a arith.o
+  UNUSED   0000f8 ........ ........    __llmul MSL_C.PPCEABI.bare.VS.UC.a arith.o
+  UNUSED   00004c ........ ........    __msl_div MSL_C.PPCEABI.bare.VS.UC.a arith.o
+  UNUSED   00004c ........ ........    __msl_ldiv MSL_C.PPCEABI.bare.VS.UC.a arith.o
+  UNUSED   00013c ........ ........    __lldiv MSL_C.PPCEABI.bare.VS.UC.a arith.o
+  UNUSED   000036 ........ ........    __msl_mod MSL_C.PPCEABI.bare.VS.UC.a arith.o
+  UNUSED   000036 ........ ........    __msl_lmod MSL_C.PPCEABI.bare.VS.UC.a arith.o
+  UNUSED   00012c ........ ........    __llmod MSL_C.PPCEABI.bare.VS.UC.a arith.o
+  00001e48 000000 40001e48 000023c8  1 .text.332 	MSL_C.PPCEABI.bare.VS.UC.a arith.o
+  00001e48 000056 40001e48 000023c8  1 .text 	MSL_C.PPCEABI.bare.VS.UC.a ctype.o
+  UNUSED   00002c ........ ........    isalnum MSL_C.PPCEABI.bare.VS.UC.a ctype.o
+  UNUSED   00002a ........ ........    isalpha MSL_C.PPCEABI.bare.VS.UC.a ctype.o
+  UNUSED   00002a ........ ........    isblank MSL_C.PPCEABI.bare.VS.UC.a ctype.o
+  UNUSED   00002a ........ ........    iscntrl MSL_C.PPCEABI.bare.VS.UC.a ctype.o
+  00001e48 00002a 40001e48 000023c8  2 isdigit 	MSL_C.PPCEABI.bare.VS.UC.a ctype.o
+  UNUSED   00002a ........ ........    isgraph MSL_C.PPCEABI.bare.VS.UC.a ctype.o
+  UNUSED   00002c ........ ........    islower MSL_C.PPCEABI.bare.VS.UC.a ctype.o
+  UNUSED   00002c ........ ........    isprint MSL_C.PPCEABI.bare.VS.UC.a ctype.o
+  UNUSED   00002c ........ ........    ispunct MSL_C.PPCEABI.bare.VS.UC.a ctype.o
+  UNUSED   00002c ........ ........    isspace MSL_C.PPCEABI.bare.VS.UC.a ctype.o
+  00001e72 00002c 40001e72 000023f2  2 isupper 	MSL_C.PPCEABI.bare.VS.UC.a ctype.o
+  UNUSED   00002c ........ ........    isxdigit MSL_C.PPCEABI.bare.VS.UC.a ctype.o
+  UNUSED   000022 ........ ........    tolower MSL_C.PPCEABI.bare.VS.UC.a ctype.o
+  UNUSED   000022 ........ ........    toupper MSL_C.PPCEABI.bare.VS.UC.a ctype.o
+  00001e9e 000000 40001e9e 0000241e  1 .text.225 	MSL_C.PPCEABI.bare.VS.UC.a ctype.o
+  00001e9e 000000 40001e9e 0000241e  1 .text 	MSL_C.PPCEABI.bare.VS.UC.a locale.o
+  UNUSED   0002b8 ........ ........    setlocale MSL_C.PPCEABI.bare.VS.UC.a locale.o
+  UNUSED   000088 ........ ........    localeconv MSL_C.PPCEABI.bare.VS.UC.a locale.o
+  UNUSED   00007a ........ ........    xfgets MSL_C.PPCEABI.bare.VS.UC.a locale.o
+  00001e9e 000000 40001e9e 0000241e  1 .text.258 	MSL_C.PPCEABI.bare.VS.UC.a locale.o
+  00001e9e 0000aa 40001e9e 0000241e  1 .text 	MSL_C.PPCEABI.bare.VS.UC.a mbstring.o
+  UNUSED   000018 ........ ........    mblen MSL_C.PPCEABI.bare.VS.UC.a mbstring.o
+  UNUSED   000098 ........ ........    is_utf8_complete MSL_C.PPCEABI.bare.VS.UC.a mbstring.o
+  UNUSED   0000de ........ ........    __utf8_to_unicode MSL_C.PPCEABI.bare.VS.UC.a mbstring.o
+  UNUSED   000014 ........ ........    mbtowc MSL_C.PPCEABI.bare.VS.UC.a mbstring.o
+  UNUSED   0000d6 ........ ........    __unicode_to_UTF8 MSL_C.PPCEABI.bare.VS.UC.a mbstring.o
+  UNUSED   0000f6 ........ ........    __unicode_to_UTF8_s MSL_C.PPCEABI.bare.VS.UC.a mbstring.o
+  00001e9e 000026 40001e9e 0000241e  2 __mbtowc_noconv 	MSL_C.PPCEABI.bare.VS.UC.a mbstring.o
+  00001ec4 00000e 40001ec4 00002444  2 __wctomb_noconv 	MSL_C.PPCEABI.bare.VS.UC.a mbstring.o
+  00001ed2 000014 40001ed2 00002452  2 wctomb 	MSL_C.PPCEABI.bare.VS.UC.a mbstring.o
+  UNUSED   0000ac ........ ........    wctomb_s MSL_C.PPCEABI.bare.VS.UC.a mbstring.o
+  UNUSED   00005c ........ ........    mbstowcs MSL_C.PPCEABI.bare.VS.UC.a mbstring.o
+  UNUSED   00009c ........ ........    mbstowcs_s MSL_C.PPCEABI.bare.VS.UC.a mbstring.o
+  00001ee6 000062 40001ee6 00002466  2 wcstombs 	MSL_C.PPCEABI.bare.VS.UC.a mbstring.o
+  UNUSED   00009e ........ ........    wcstombs_s MSL_C.PPCEABI.bare.VS.UC.a mbstring.o
+  UNUSED   000022 ........ ........    mbrlen MSL_C.PPCEABI.bare.VS.UC.a mbstring.o
+  UNUSED   000058 ........ ........    mbrtowc MSL_C.PPCEABI.bare.VS.UC.a mbstring.o
+  UNUSED   00000c ........ ........    wcrtomb MSL_C.PPCEABI.bare.VS.UC.a mbstring.o
+  UNUSED   000070 ........ ........    wcrtomb_s MSL_C.PPCEABI.bare.VS.UC.a mbstring.o
+  UNUSED   000076 ........ ........    mbsrtowcs MSL_C.PPCEABI.bare.VS.UC.a mbstring.o
+  UNUSED   0000a4 ........ ........    mbsrtowcs_s MSL_C.PPCEABI.bare.VS.UC.a mbstring.o
+  UNUSED   00006a ........ ........    wcsrtombs MSL_C.PPCEABI.bare.VS.UC.a mbstring.o
+  UNUSED   0000b0 ........ ........    wcsrtombs_s MSL_C.PPCEABI.bare.VS.UC.a mbstring.o
+  UNUSED   000012 ........ ........    mbsinit MSL_C.PPCEABI.bare.VS.UC.a mbstring.o
+  00001f48 000000 40001f48 000024c8  1 .text.835 	MSL_C.PPCEABI.bare.VS.UC.a mbstring.o
+  00001f48 00001a 40001f48 000024c8  1 .text 	MSL_C.PPCEABI.bare.VS.UC.a mem.o
+  UNUSED   000084 ........ ........    memmove MSL_C.PPCEABI.bare.VS.UC.a mem.o
+  00001f48 00001a 40001f48 000024c8  2 memchr 	MSL_C.PPCEABI.bare.VS.UC.a mem.o
+  UNUSED   00001e ........ ........    __memrchr MSL_C.PPCEABI.bare.VS.UC.a mem.o
+  UNUSED   00002c ........ ........    memcmp MSL_C.PPCEABI.bare.VS.UC.a mem.o
+  UNUSED   00005e ........ ........    memcpy_s MSL_C.PPCEABI.bare.VS.UC.a mem.o
+  UNUSED   00005e ........ ........    memmove_s MSL_C.PPCEABI.bare.VS.UC.a mem.o
+  00001f62 000000 40001f62 000024e2  1 .text.182 	MSL_C.PPCEABI.bare.VS.UC.a mem.o
+  00001f62 001458 40001f62 000024e2  1 .text 	MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  00001f62 000366 40001f62 000024e2  2 parse_format 	MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  000022c8 000026 400022c8 00002848  2 set_base 	MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  000022ee 0000d8 400022ee 0000286e  2 justify_conversion 	MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  000023c6 0000d2 400023c6 00002946  2 long2str 	MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  00002498 0000fa 40002498 00002a18  2 longlong2str 	MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  00002592 00029c 40002592 00002b12  2 double2hex 	MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  UNUSED   000046 ........ ........    __double2hex MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  0000282e 0000a4 4000282e 00002dae  2 round_decimal 	MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  000028d2 00041a 400028d2 00002e52  2 float2str 	MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  00002cec 000606 40002cec 0000326c  2 __pformatter 	MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  UNUSED   00002c ........ ........    __FileWrite MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  000032f2 00003a 400032f2 00003872  2 __StringWrite 	MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  UNUSED   000070 ........ ........    printf MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  UNUSED   000082 ........ ........    printf_s MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  UNUSED   000048 ........ ........    vprintf MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  UNUSED   00005a ........ ........    vprintf_s MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  UNUSED   00003c ........ ........    vfprintf MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  UNUSED   000052 ........ ........    vfprintf_s MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  0000332c 00004c 4000332c 000038ac  2 vsnprintf 	MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  UNUSED   00007a ........ ........    vsnprintf_s MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  UNUSED   000008 ........ ........    vsprintf MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  UNUSED   000054 ........ ........    vsprintf_s MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  UNUSED   000040 ........ ........    snprintf MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  UNUSED   000040 ........ ........    snprintf_s MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  00003378 000042 40003378 000038f8  2 sprintf 	MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  UNUSED   000040 ........ ........    sprintf_s MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  000033ba 000000 400033ba 0000393a  1 .text.1442 	MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  000033ba 0000d4 400033ba 0000393a  1 .text 	MSL_C.PPCEABI.bare.VS.UC.a string.o
+  000033ba 00008a 400033ba 0000393a  2 strcpy 	MSL_C.PPCEABI.bare.VS.UC.a string.o
+  00003444 00002c 40003444 000039c4  2 strncpy 	MSL_C.PPCEABI.bare.VS.UC.a string.o
+  UNUSED   000020 ........ ........    strcat MSL_C.PPCEABI.bare.VS.UC.a string.o
+  UNUSED   000030 ........ ........    strncat MSL_C.PPCEABI.bare.VS.UC.a string.o
+  UNUSED   0000bc ........ ........    strcmp MSL_C.PPCEABI.bare.VS.UC.a string.o
+  UNUSED   000028 ........ ........    strncmp MSL_C.PPCEABI.bare.VS.UC.a string.o
+  00003470 00001e 40003470 000039f0  2 strchr 	MSL_C.PPCEABI.bare.VS.UC.a string.o
+  UNUSED   00006e ........ ........    strcoll MSL_C.PPCEABI.bare.VS.UC.a string.o
+  UNUSED   000160 ........ ........    strxfrm MSL_C.PPCEABI.bare.VS.UC.a string.o
+  UNUSED   00002c ........ ........    strrchr MSL_C.PPCEABI.bare.VS.UC.a string.o
+  UNUSED   00006e ........ ........    strpbrk MSL_C.PPCEABI.bare.VS.UC.a string.o
+  UNUSED   00006e ........ ........    strspn MSL_C.PPCEABI.bare.VS.UC.a string.o
+  UNUSED   00006e ........ ........    strcspn MSL_C.PPCEABI.bare.VS.UC.a string.o
+  UNUSED   0000ca ........ ........    strtok MSL_C.PPCEABI.bare.VS.UC.a string.o
+  UNUSED   0000ea ........ ........    strtok_s MSL_C.PPCEABI.bare.VS.UC.a string.o
+  UNUSED   00004c ........ ........    strstr MSL_C.PPCEABI.bare.VS.UC.a string.o
+  UNUSED   000026 ........ ........    strnlen_s MSL_C.PPCEABI.bare.VS.UC.a string.o
+  UNUSED   00005e ........ ........    strcpy_s MSL_C.PPCEABI.bare.VS.UC.a string.o
+  UNUSED   000084 ........ ........    strncpy_s MSL_C.PPCEABI.bare.VS.UC.a string.o
+  UNUSED   000076 ........ ........    strcat_s MSL_C.PPCEABI.bare.VS.UC.a string.o
+  UNUSED   0000ac ........ ........    strncat_s MSL_C.PPCEABI.bare.VS.UC.a string.o
+  UNUSED   00000c ........ ........    strerror MSL_C.PPCEABI.bare.VS.UC.a string.o
+  UNUSED   000082 ........ ........    strerror_s MSL_C.PPCEABI.bare.VS.UC.a string.o
+  UNUSED   000268 ........ ........    __strerror MSL_C.PPCEABI.bare.VS.UC.a string.o
+  0000348e 000000 4000348e 00003a0e  1 .text.960 	MSL_C.PPCEABI.bare.VS.UC.a string.o
+  0000348e 000000 4000348e 00003a0e  1 .text 	MSL_C.PPCEABI.bare.VS.UC.a wctype.o
+  UNUSED   000024 ........ ........    iswalnum MSL_C.PPCEABI.bare.VS.UC.a wctype.o
+  UNUSED   000022 ........ ........    iswalpha MSL_C.PPCEABI.bare.VS.UC.a wctype.o
+  UNUSED   000022 ........ ........    iswblank MSL_C.PPCEABI.bare.VS.UC.a wctype.o
+  UNUSED   000022 ........ ........    iswcntrl MSL_C.PPCEABI.bare.VS.UC.a wctype.o
+  UNUSED   000022 ........ ........    iswdigit MSL_C.PPCEABI.bare.VS.UC.a wctype.o
+  UNUSED   000022 ........ ........    iswgraph MSL_C.PPCEABI.bare.VS.UC.a wctype.o
+  UNUSED   000024 ........ ........    iswlower MSL_C.PPCEABI.bare.VS.UC.a wctype.o
+  UNUSED   000024 ........ ........    iswprint MSL_C.PPCEABI.bare.VS.UC.a wctype.o
+  UNUSED   000024 ........ ........    iswpunct MSL_C.PPCEABI.bare.VS.UC.a wctype.o
+  UNUSED   000024 ........ ........    iswspace MSL_C.PPCEABI.bare.VS.UC.a wctype.o
+  UNUSED   000024 ........ ........    iswupper MSL_C.PPCEABI.bare.VS.UC.a wctype.o
+  UNUSED   000024 ........ ........    iswxdigit MSL_C.PPCEABI.bare.VS.UC.a wctype.o
+  UNUSED   000020 ........ ........    towlower MSL_C.PPCEABI.bare.VS.UC.a wctype.o
+  UNUSED   000020 ........ ........    towupper MSL_C.PPCEABI.bare.VS.UC.a wctype.o
+  UNUSED   00000e ........ ........    wctob MSL_C.PPCEABI.bare.VS.UC.a wctype.o
+  UNUSED   000010 ........ ........    btowc MSL_C.PPCEABI.bare.VS.UC.a wctype.o
+  UNUSED   0000de ........ ........    wctype MSL_C.PPCEABI.bare.VS.UC.a wctype.o
+  UNUSED   000022 ........ ........    iswctype MSL_C.PPCEABI.bare.VS.UC.a wctype.o
+  0000348e 000000 4000348e 00003a0e  1 .text.306 	MSL_C.PPCEABI.bare.VS.UC.a wctype.o
+  0000348e 00005c 4000348e 00003a0e  1 .text 	MSL_C.PPCEABI.bare.VS.UC.a math_api.o
+  UNUSED   000046 ........ ........    __msl_generic_count_bits32 MSL_C.PPCEABI.bare.VS.UC.a math_api.o
+  UNUSED   000094 ........ ........    __msl_generic_count_bits64 MSL_C.PPCEABI.bare.VS.UC.a math_api.o
+  UNUSED   00005e ........ ........    __msl_relation MSL_C.PPCEABI.bare.VS.UC.a math_api.o
+  UNUSED   000004 ........ ........    __signbitf MSL_C.PPCEABI.bare.VS.UC.a math_api.o
+  UNUSED   00003a ........ ........    __fpclassifyf MSL_C.PPCEABI.bare.VS.UC.a math_api.o
+  0000348e 00000e 4000348e 00003a0e  2 __signbitd 	MSL_C.PPCEABI.bare.VS.UC.a math_api.o
+  0000349c 00004e 4000349c 00003a1c  2 __fpclassifyd 	MSL_C.PPCEABI.bare.VS.UC.a math_api.o
+  000034ea 000000 400034ea 00003a6a  1 .text.133 	MSL_C.PPCEABI.bare.VS.UC.a math_api.o
+  000034ea 000028 400034ea 00003a6a  1 .text 	MSL_C.PPCEABI.bare.VS.UC.a math_sun.o
+  000034ea 000028 400034ea 00003a6a  2 scalbn 	MSL_C.PPCEABI.bare.VS.UC.a math_sun.o
+  UNUSED   000020 ........ ........    exp2 MSL_C.PPCEABI.bare.VS.UC.a math_sun.o
+  UNUSED   000014 ........ ........    llrint MSL_C.PPCEABI.bare.VS.UC.a math_sun.o
+  UNUSED   0000f6 ........ ........    llround MSL_C.PPCEABI.bare.VS.UC.a math_sun.o
+  UNUSED   0000cc ........ ........    llroundf MSL_C.PPCEABI.bare.VS.UC.a math_sun.o
+  UNUSED   0000f6 ........ ........    llroundl MSL_C.PPCEABI.bare.VS.UC.a math_sun.o
+  UNUSED   00012c ........ ........    lrint MSL_C.PPCEABI.bare.VS.UC.a math_sun.o
+  UNUSED   0000f4 ........ ........    lrintf MSL_C.PPCEABI.bare.VS.UC.a math_sun.o
+  UNUSED   00012c ........ ........    lrintl MSL_C.PPCEABI.bare.VS.UC.a math_sun.o
+  UNUSED   0000d4 ........ ........    lround MSL_C.PPCEABI.bare.VS.UC.a math_sun.o
+  UNUSED   0000aa ........ ........    lroundf MSL_C.PPCEABI.bare.VS.UC.a math_sun.o
+  UNUSED   0000d4 ........ ........    lroundl MSL_C.PPCEABI.bare.VS.UC.a math_sun.o
+  UNUSED   000110 ........ ........    nearbyint MSL_C.PPCEABI.bare.VS.UC.a math_sun.o
+  UNUSED   0000d6 ........ ........    nearbyintf MSL_C.PPCEABI.bare.VS.UC.a math_sun.o
+  UNUSED   000110 ........ ........    nearbyintl MSL_C.PPCEABI.bare.VS.UC.a math_sun.o
+  UNUSED   0000dc ........ ........    remquo MSL_C.PPCEABI.bare.VS.UC.a math_sun.o
+  UNUSED   0000b4 ........ ........    remquof MSL_C.PPCEABI.bare.VS.UC.a math_sun.o
+  UNUSED   000004 ........ ........    fabsf MSL_C.PPCEABI.bare.VS.UC.a math_sun.o
+  UNUSED   0000e0 ........ ........    remquol MSL_C.PPCEABI.bare.VS.UC.a math_sun.o
+  UNUSED   000084 ........ ........    round MSL_C.PPCEABI.bare.VS.UC.a math_sun.o
+  UNUSED   00006a ........ ........    roundf MSL_C.PPCEABI.bare.VS.UC.a math_sun.o
+  UNUSED   000084 ........ ........    roundl MSL_C.PPCEABI.bare.VS.UC.a math_sun.o
+  UNUSED   000028 ........ ........    scalbnl MSL_C.PPCEABI.bare.VS.UC.a math_sun.o
+  UNUSED   000010 ........ ........    tgamma MSL_C.PPCEABI.bare.VS.UC.a math_sun.o
+  UNUSED   00005a ........ ........    trunc MSL_C.PPCEABI.bare.VS.UC.a math_sun.o
+  UNUSED   00004e ........ ........    truncf MSL_C.PPCEABI.bare.VS.UC.a math_sun.o
+  UNUSED   00005a ........ ........    truncl MSL_C.PPCEABI.bare.VS.UC.a math_sun.o
+  00003512 000000 40003512 00003a92  1 .text.626 	MSL_C.PPCEABI.bare.VS.UC.a math_sun.o
+  00003512 000036 40003512 00003a92  1 .text 	MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000004 ........ ........    __msl_count_bits32 MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000006 ........ ........    __msl_count_leading_zero32 MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    __msl_count_trailing_zero32 MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000006 ........ ........    __msl_count_leading_one32 MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000006 ........ ........    __msl_count_trailing_one32 MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   00000a ........ ........    __msl_rotate_left32 MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   00000e ........ ........    __msl_rotate_right32 MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000004 ........ ........    __msl_count_bits64 MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000014 ........ ........    __msl_count_leading_zero64 MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  00003512 000026 40003512 00003a92  2 __msl_count_trailing_zero64 	MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   00000c ........ ........    __msl_count_leading_one64 MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   00000c ........ ........    __msl_count_trailing_one64 MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000036 ........ ........    __msl_rotate_left64 MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000036 ........ ........    __msl_rotate_right64 MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    fmal MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   0000be ........ ........    _inv_sqrtf MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000032 ........ ........    copysignf MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000018 ........ ........    expm1f MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000024 ........ ........    scalbnf MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000018 ........ ........    acosf MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    acosl MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000018 ........ ........    asinf MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    asinl MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000018 ........ ........    atanf MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    atanl MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000032 ........ ........    atan2f MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    atan2l MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000018 ........ ........    ceilf MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    ceill MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000018 ........ ........    cosf MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    cosl MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000018 ........ ........    coshf MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    coshl MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000018 ........ ........    expf MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    expl MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  00003538 000010 40003538 00003ab8  2 fabsl 	MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000018 ........ ........    floorf MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    floorl MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000032 ........ ........    fmodf MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    fmodl MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000024 ........ ........    frexpf MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    frexpl MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000024 ........ ........    ldexpf MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    ldexpl MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000018 ........ ........    logf MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    logl MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000018 ........ ........    log10f MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    log10l MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000034 ........ ........    modff MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000026 ........ ........    modfl MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000032 ........ ........    powf MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    powl MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000018 ........ ........    sinf MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    sinl MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000018 ........ ........    sinhf MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    sinhl MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    sqrtl MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000018 ........ ........    tanf MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    tanl MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000018 ........ ........    tanhf MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    tanhl MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000018 ........ ........    acoshf MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    acoshl MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000018 ........ ........    asinhf MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    asinhl MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000018 ........ ........    atanhf MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    atanhl MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    cbrtl MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    copysignl MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    expm1l MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000032 ........ ........    fdimf MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    fdiml MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000032 ........ ........    fmaxf MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    fmaxl MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000032 ........ ........    fminf MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    fminl MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000032 ........ ........    hypotf MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    hypotl MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000014 ........ ........    ilogbf MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    ilogbl MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000024 ........ ........    lgammaf_r MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    lgammal_r MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000014 ........ ........    llrintf MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    llrintl MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000018 ........ ........    log1pf MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    log1pl MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000018 ........ ........    log2f MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    log2l MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000018 ........ ........    logbf MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    logbl MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    nextafterl MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    nexttowardl MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000032 ........ ........    remainderf MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    remainderl MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    rintl MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000024 ........ ........    scalblnf MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000010 ........ ........    scalblnl MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  UNUSED   000116 ........ ........    nexttoward MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  00003548 000000 40003548 00003ac8  1 .text.637 	MSL_C.PPCEABI.bare.VS.UC.a math_double.o
+  00003548 000016 40003548 00003ac8  1 .text 	MSL_C.PPCEABI.bare.VS.UC.a secure_error.o
+  00003548 000014 40003548 00003ac8  2 __msl_runtime_constraint_violation_s 	MSL_C.PPCEABI.bare.VS.UC.a secure_error.o
+  UNUSED   000018 ........ ........    set_constraint_handler_s MSL_C.PPCEABI.bare.VS.UC.a secure_error.o
+  UNUSED   000004 ........ ........    abort_handler_s MSL_C.PPCEABI.bare.VS.UC.a secure_error.o
+  0000355c 000002 4000355c 00003adc  2 ignore_handler_s 	MSL_C.PPCEABI.bare.VS.UC.a secure_error.o
+  UNUSED   000002 ........ ........    strict_handler_s MSL_C.PPCEABI.bare.VS.UC.a secure_error.o
+  0000355e 000000 4000355e 00003ade  1 .text.75 	MSL_C.PPCEABI.bare.VS.UC.a secure_error.o
+  0000355e 000b66 4000355e 00003ade  1 .text 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  0000355e 000b66 4000355e 00003ade  2 __ieee754_pow 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  000040c4 000000 400040c4 00004644  1 .text.313 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  000040c4 00001a 400040c4 00004644  1 .text 	MSL_C.PPCEABI.bare.VS.UC.a s_copysign.o
+  000040c4 00001a 400040c4 00004644  2 copysign 	MSL_C.PPCEABI.bare.VS.UC.a s_copysign.o
+  000040de 000000 400040de 0000465e  1 .text.47 	MSL_C.PPCEABI.bare.VS.UC.a s_copysign.o
+  000040de 00006c 400040de 0000465e  1 .text 	MSL_C.PPCEABI.bare.VS.UC.a s_frexp.o
+  000040de 00006c 400040de 0000465e  2 frexp 	MSL_C.PPCEABI.bare.VS.UC.a s_frexp.o
+  0000414a 000000 4000414a 000046ca  1 .text.59 	MSL_C.PPCEABI.bare.VS.UC.a s_frexp.o
+  0000414a 00012e 4000414a 000046ca  1 .text 	MSL_C.PPCEABI.bare.VS.UC.a s_ldexp.o
+  0000414a 00012e 4000414a 000046ca  2 ldexp 	MSL_C.PPCEABI.bare.VS.UC.a s_ldexp.o
+  00004278 000000 40004278 000047f8  1 .text.73 	MSL_C.PPCEABI.bare.VS.UC.a s_ldexp.o
+  00004278 000004 40004278 000047f8  1 .text 	MSL_C.PPCEABI.bare.VS.UC.a w_pow.o
+  00004278 000004 40004278 000047f8  2 pow 	MSL_C.PPCEABI.bare.VS.UC.a w_pow.o
+  0000427c 000000 4000427c 000047fc  1 .text.47 	MSL_C.PPCEABI.bare.VS.UC.a w_pow.o
+  0000427c 00000e 4000427c 000047fc  1 .text 	MSL_C.PPCEABI.bare.VS.UC.a s_fabs.o
+  0000427c 00000e 4000427c 000047fc  2 fabs 	MSL_C.PPCEABI.bare.VS.UC.a s_fabs.o
+  0000428a 000000 4000428a 0000480a  1 .text.46 	MSL_C.PPCEABI.bare.VS.UC.a s_fabs.o
+  0000428a 000006 40004290 00004810 16 *fill*
+  00004290 00039c 40004290 00004810  1 .text_vle 	MSL_C.PPCEABI.bare.VS.UC.a sqrt.VS.UC.o
+  00004290 00039c 40004290 00004810 16 sqrt 	MSL_C.PPCEABI.bare.VS.UC.a sqrt.VS.UC.o
+  UNUSED   00018e ........ ........    sqrtf MSL_C.PPCEABI.bare.VS.UC.a sqrt.VS.UC.o
+
+
+.rodata section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+  00000000 00000c 40004630 00004bb0  1 .rodata 	__ppc_eabi_init.o 
+  00000000 00000c 40004630 00004bb0  4 @22 	__ppc_eabi_init.o 
+  0000000c 000004 40004640 00004bc0  8 *fill*
+  00000010 000100 40004640 00004bc0  1 .rodata 	Sinwave.o 
+  00000010 000100 40004640 00004bc0  8 SIN_DATA_RAW 	Sinwave.o 
+  00000110 000400 40004740 00004cc0  1 .rodata 	MSL_C.PPCEABI.bare.VS.UC.a ctype.o
+  UNUSED   000100 ........ ........    __ctype_map MSL_C.PPCEABI.bare.VS.UC.a ctype.o
+  UNUSED   000200 ........ ........    __msl_ctype_map MSL_C.PPCEABI.bare.VS.UC.a ctype.o
+  00000110 000200 40004740 00004cc0  8 __ctype_mapC 	MSL_C.PPCEABI.bare.VS.UC.a ctype.o
+  UNUSED   000100 ........ ........    __lower_map MSL_C.PPCEABI.bare.VS.UC.a ctype.o
+  00000310 000100 40004940 00004ec0  8 __lower_mapC 	MSL_C.PPCEABI.bare.VS.UC.a ctype.o
+  UNUSED   000100 ........ ........    __upper_map MSL_C.PPCEABI.bare.VS.UC.a ctype.o
+  00000410 000100 40004a40 00004fc0  8 __upper_mapC 	MSL_C.PPCEABI.bare.VS.UC.a ctype.o
+  00000510 000600 40004b40 000050c0  1 .rodata 	MSL_C.PPCEABI.bare.VS.UC.a wctype.o
+  UNUSED   000200 ........ ........    __msl_wctype_map MSL_C.PPCEABI.bare.VS.UC.a wctype.o
+  00000510 000200 40004b40 000050c0  8 __wctype_mapC 	MSL_C.PPCEABI.bare.VS.UC.a wctype.o
+  UNUSED   000200 ........ ........    __wlower_map MSL_C.PPCEABI.bare.VS.UC.a wctype.o
+  00000710 000200 40004d40 000052c0  8 __wlower_mapC 	MSL_C.PPCEABI.bare.VS.UC.a wctype.o
+  UNUSED   000200 ........ ........    __wupper_map MSL_C.PPCEABI.bare.VS.UC.a wctype.o
+  00000910 000200 40004f40 000054c0  8 __wupper_mapC 	MSL_C.PPCEABI.bare.VS.UC.a wctype.o
+  00000b10 000030 40005140 000056c0  1 .rodata 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  00000b10 000000 40005140 000056c0    ...rodata.0 (entry of .rodata) 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  00000b10 000010 40005140 000056c0  8 bp 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  00000b20 000010 40005150 000056d0  8 dp_h 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  00000b30 000010 40005160 000056e0  8 dp_l 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+
+
+.ctors section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+  00000000 000000 40005170 000056f0  1 .ctors$00 	Linker Generated Symbol File 
+  00000000 000000 40005170 000056f0  4 _ctors 	Linker Generated Symbol File 
+  00000000 000004 40005170 000056f0  1 .ctors$10 	Runtime.PPCEABI.VS.UC.a __init_cpp_exceptions.o
+  00000000 000004 40005170 000056f0  4 __init_cpp_exceptions_reference 	Runtime.PPCEABI.VS.UC.a __init_cpp_exceptions.o
+  00000004 000004 40005174 000056f4  1 .ctors$99 	Linker Generated Symbol File 
+  00000004 000004 40005174 000056f4  4 _ctors$99 	Linker Generated Symbol File 
+
+
+.dtors section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+  00000000 000000 40005178 000056f8  1 .dtors$00 	Linker Generated Symbol File 
+  00000000 000000 40005178 000056f8  4 _dtors 	Linker Generated Symbol File 
+  00000000 000004 40005178 000056f8  1 .dtors$15 	Runtime.PPCEABI.VS.UC.a __init_cpp_exceptions.o
+  00000000 000004 40005178 000056f8  4 __fini_cpp_exceptions_reference 	Runtime.PPCEABI.VS.UC.a __init_cpp_exceptions.o
+  00000004 000004 4000517c 000056fc  1 .dtors$99 	Linker Generated Symbol File 
+  00000004 000004 4000517c 000056fc  4 _dtors$99 	Linker Generated Symbol File 
+
+
+extab section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+  00000000 000020 40005180 00005700  1 extab 	main.o 
+  UNUSED   000008 ........ ........    @493 main.o 
+  00000000 000008 40005180 00005700  4 @551 	main.o 
+  00000008 000008 40005188 00005708  4 @557 	main.o 
+  00000010 000008 40005190 00005710  4 @567 	main.o 
+  UNUSED   000008 ........ ........    @575 main.o 
+  00000018 000008 40005198 00005718  4 @595 	main.o 
+  00000020 000008 400051a0 00005720  1 extab 	Exceptions.o 
+  00000020 000008 400051a0 00005720  4 @5 	Exceptions.o 
+  00000028 000008 400051a8 00005728  1 extab 	IntcInterrupts.o 
+  00000028 000008 400051a8 00005728  4 @12 	IntcInterrupts.o 
+  00000030 000018 400051b0 00005730  1 extab 	Sinwave.o 
+  UNUSED   000008 ........ ........    @34 Sinwave.o 
+  UNUSED   000008 ........ ........    @61 Sinwave.o 
+  00000030 000008 400051b0 00005730  4 @83 	Sinwave.o 
+  00000038 000008 400051b8 00005738  4 @107 	Sinwave.o 
+  UNUSED   000008 ........ ........    @119 Sinwave.o 
+  00000040 000008 400051c0 00005740  4 @139 	Sinwave.o 
+  00000048 000008 400051c8 00005748  1 extab 	Serial.o 
+  00000048 000008 400051c8 00005748  4 @22 	Serial.o 
+
+
+extabindex section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+
+
+.__uninitialized_intc_handlertable section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+  00000000 001340 40011000 00005800  1 .__uninitialized_intc_handlertable 	IntcInterrupts.o 
+  00000000 001340 40011000 00005800  8 INTCInterruptsHandlerTable 	IntcInterrupts.o 
+
+
+.data section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+  00000000 00004b 40012340 00005800  1 .data 	main.o 
+  00000000 000038 40012340 00005800  4 @550 	main.o 
+  UNUSED   000017 ........ ........    @574 main.o 
+  00000038 000013 40012378 00005838  4 @594 	main.o 
+  0000004b 000005 40012390 00005850  8 *fill*
+  00000050 000300 40012390 00005850  1 .data 	MSL_C.PPCEABI.bare.VS.UC.a locale.o
+  UNUSED   000000 ........ ........    ...data.0 MSL_C.PPCEABI.bare.VS.UC.a locale.o
+  00000050 000038 40012390 00005850  8 __lconv 	MSL_C.PPCEABI.bare.VS.UC.a locale.o
+  00000088 000028 400123c8 00005888  8 _loc_ctyp_C 	MSL_C.PPCEABI.bare.VS.UC.a locale.o
+  UNUSED   000028 ........ ........    _loc_ctyp_I MSL_C.PPCEABI.bare.VS.UC.a locale.o
+  UNUSED   000028 ........ ........    _loc_ctyp_C_UTF_8 MSL_C.PPCEABI.bare.VS.UC.a locale.o
+  000000b0 0000c0 400123f0 000058b0  8 char_coll_tableC 	MSL_C.PPCEABI.bare.VS.UC.a locale.o
+  00000170 00001c 400124b0 00005970  4 _loc_coll_C 	MSL_C.PPCEABI.bare.VS.UC.a locale.o
+  0000018c 000034 400124cc 0000598c  4 _loc_mon_C 	MSL_C.PPCEABI.bare.VS.UC.a locale.o
+  000001c0 000014 40012500 000059c0  4 _loc_num_C 	MSL_C.PPCEABI.bare.VS.UC.a locale.o
+  000001d4 00000f 40012514 000059d4  4 @19 	MSL_C.PPCEABI.bare.VS.UC.a locale.o
+  000001e4 00000c 40012524 000059e4  4 @20 	MSL_C.PPCEABI.bare.VS.UC.a locale.o
+  000001f0 000009 40012530 000059f0  4 @21 	MSL_C.PPCEABI.bare.VS.UC.a locale.o
+  000001fc 000055 4001253c 000059fc  4 @23 	MSL_C.PPCEABI.bare.VS.UC.a locale.o
+  00000254 000086 40012594 00005a54  4 @24 	MSL_C.PPCEABI.bare.VS.UC.a locale.o
+  000002e0 000028 40012620 00005ae0  8 _loc_tim_C 	MSL_C.PPCEABI.bare.VS.UC.a locale.o
+  00000308 000048 40012648 00005b08  8 _current_locale 	MSL_C.PPCEABI.bare.VS.UC.a locale.o
+  UNUSED   0000d8 ........ ........    _preset_locales MSL_C.PPCEABI.bare.VS.UC.a locale.o
+  00000350 000230 40012690 00005b50  1 .data 	MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  00000350 0000e0 40012690 00005b50  4 @268 	MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  00000430 000150 40012770 00005c30  4 @1095 	MSL_C.PPCEABI.bare.VS.UC.a printf.o
+
+
+.sdata section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+  00000000 000010 400128c0 00005d80  1 .sdata 	Sinwave.o 
+  UNUSED   000002 ........ ........    channelMask Sinwave.o 
+  00000000 000001 400128c0 00005d80  1 OFFSETB 	Sinwave.o 
+  00000001 000001 400128c1 00005d81  1 OFFSETC 	Sinwave.o 
+  00000008 000008 400128c8 00005d88  8 sinon 	Sinwave.o 
+  UNUSED   000008 ........ ........    sinoff Sinwave.o 
+  00000010 000004 400128d0 00005d90  1 .sdata 	Runtime.PPCEABI.VS.UC.a __init_cpp_exceptions.o
+  00000010 000004 400128d0 00005d90  4 fragmentID 	Runtime.PPCEABI.VS.UC.a __init_cpp_exceptions.o
+  00000014 000004 400128d8 00005d98  8 *fill*
+  00000018 00000a 400128d8 00005d98  1 .sdata 	MSL_C.PPCEABI.bare.VS.UC.a ansi_fp.o
+  00000018 000002 400128d8 00005d98  4 @246 	MSL_C.PPCEABI.bare.VS.UC.a ansi_fp.o
+  0000001c 000002 400128dc 00005d9c  4 @247 	MSL_C.PPCEABI.bare.VS.UC.a ansi_fp.o
+  00000020 000002 400128e0 00005da0  4 @248 	MSL_C.PPCEABI.bare.VS.UC.a ansi_fp.o
+  00000022 000006 400128e8 00005da8  8 *fill*
+  00000028 000013 400128e8 00005da8  1 .sdata 	MSL_C.PPCEABI.bare.VS.UC.a locale.o
+  00000028 000002 400128e8 00005da8  4 @16 	MSL_C.PPCEABI.bare.VS.UC.a locale.o
+  0000002c 000001 400128ec 00005dac  4 @17 	MSL_C.PPCEABI.bare.VS.UC.a locale.o
+  00000030 000006 400128f0 00005db0  4 @18 	MSL_C.PPCEABI.bare.VS.UC.a locale.o
+  00000038 000003 400128f8 00005db8  4 @22 	MSL_C.PPCEABI.bare.VS.UC.a locale.o
+  UNUSED   000002 ........ ........    @114 MSL_C.PPCEABI.bare.VS.UC.a locale.o
+  0000003b 000005 40012900 00005dc0  8 *fill*
+  00000040 000035 40012900 00005dc0  1 .sdata 	MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  00000040 000005 40012900 00005dc0  4 @539 	MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  00000048 000005 40012908 00005dc8  4 @540 	MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  00000050 000004 40012910 00005dd0  4 @541 	MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  00000054 000004 40012914 00005dd4  4 @542 	MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  00000058 000005 40012918 00005dd8  4 @543 	MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  00000060 000005 40012920 00005de0  4 @544 	MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  00000068 000004 40012928 00005de8  4 @545 	MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  0000006c 000004 4001292c 00005dec  4 @546 	MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  00000070 000002 40012930 00005df0  4 @1089 	MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  00000074 000001 40012934 00005df4  4 @1090 	MSL_C.PPCEABI.bare.VS.UC.a printf.o
+  00000075 000003 40012938 00005df8  8 *fill*
+  00000078 000004 40012938 00005df8  1 .sdata 	MSL_C.PPCEABI.bare.VS.UC.a float.o
+  00000078 000004 40012938 00005df8  4 __float_nan 	MSL_C.PPCEABI.bare.VS.UC.a float.o
+  UNUSED   000004 ........ ........    __float_huge MSL_C.PPCEABI.bare.VS.UC.a float.o
+  UNUSED   000008 ........ ........    __double_min MSL_C.PPCEABI.bare.VS.UC.a float.o
+  UNUSED   000008 ........ ........    __double_max MSL_C.PPCEABI.bare.VS.UC.a float.o
+  UNUSED   000008 ........ ........    __double_epsilon MSL_C.PPCEABI.bare.VS.UC.a float.o
+  UNUSED   000008 ........ ........    __double_tiny MSL_C.PPCEABI.bare.VS.UC.a float.o
+  UNUSED   000008 ........ ........    __double_huge MSL_C.PPCEABI.bare.VS.UC.a float.o
+  UNUSED   000008 ........ ........    __double_nan MSL_C.PPCEABI.bare.VS.UC.a float.o
+  UNUSED   000008 ........ ........    __extended_min MSL_C.PPCEABI.bare.VS.UC.a float.o
+  UNUSED   000008 ........ ........    __extended_max MSL_C.PPCEABI.bare.VS.UC.a float.o
+  UNUSED   000008 ........ ........    __extended_epsilon MSL_C.PPCEABI.bare.VS.UC.a float.o
+  UNUSED   000008 ........ ........    __extended_tiny MSL_C.PPCEABI.bare.VS.UC.a float.o
+  UNUSED   000008 ........ ........    __extended_huge MSL_C.PPCEABI.bare.VS.UC.a float.o
+  UNUSED   000008 ........ ........    __extended_nan MSL_C.PPCEABI.bare.VS.UC.a float.o
+  UNUSED   000004 ........ ........    __float_min MSL_C.PPCEABI.bare.VS.UC.a float.o
+  UNUSED   000004 ........ ........    __float_max MSL_C.PPCEABI.bare.VS.UC.a float.o
+  UNUSED   000004 ........ ........    __float_epsilon MSL_C.PPCEABI.bare.VS.UC.a float.o
+
+
+.sbss section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+  00000000 000008 40012940 00005e00  1 .sbss 	main.o 
+  UNUSED   000004 ........ ........    varPWMChangeCycle main.o 
+  00000000 000004 40012940 00005e00  4 cnt10msTask 	main.o 
+  00000004 000004 40012944 00005e04  4 cntLED 	main.o 
+  00000008 00000d 40012948 00005e08  1 .sbss 	Sinwave.o 
+  00000008 000001 40012948 00005e08  1 OFFSETA 	Sinwave.o 
+  0000000c 000004 4001294c 00005e0c  4 flgPWMfreq 	Sinwave.o 
+  00000010 000002 40012950 00005e10  2 varFrequency 	Sinwave.o 
+  00000012 000001 40012952 00005e12  1 indexC 	Sinwave.o 
+  00000013 000001 40012953 00005e13  1 indexB 	Sinwave.o 
+  00000014 000001 40012954 00005e14  1 indexA 	Sinwave.o 
+  00000015 000003 40012958 00005e18  8 *fill*
+  00000018 000001 40012958 00005e18  1 .sbss 	Serial.o 
+  00000018 000001 40012958 00005e18  1 cntSCIRx 	Serial.o 
+  00000019 000007 40012960 00005e20  8 *fill*
+  00000020 000004 40012960 00005e20  1 .sbss 	MSL_C.PPCEABI.bare.VS.UC.a errno.o
+  00000020 000004 40012960 00005e20  4 errno 	MSL_C.PPCEABI.bare.VS.UC.a errno.o
+  00000024 000004 40012968 00005e28  8 *fill*
+  00000028 000004 40012968 00005e28  1 .sbss 	MSL_C.PPCEABI.bare.VS.UC.a secure_error.o
+  00000028 000004 40012968 00005e28  4 __msl_constraint_handler 	MSL_C.PPCEABI.bare.VS.UC.a secure_error.o
+
+
+.sdata2 section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+  00000000 0000e8 40012970 00005e00  1 .sdata2 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  00000000 000008 40012970 00005e00  8 @276 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  00000008 000008 40012978 00005e08  8 @277 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  00000010 000008 40012980 00005e10  8 @278 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  00000018 000008 40012988 00005e18  8 @279 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  00000020 000008 40012990 00005e20  8 @280 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  00000028 000008 40012998 00005e28  8 @281 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  00000030 000008 400129a0 00005e30  8 @282 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  00000038 000008 400129a8 00005e38  8 @283 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  00000040 000008 400129b0 00005e40  8 @284 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  00000048 000008 400129b8 00005e48  8 @285 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  00000050 000008 400129c0 00005e50  8 @286 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  00000058 000008 400129c8 00005e58  8 @287 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  00000060 000008 400129d0 00005e60  8 @288 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  00000068 000008 400129d8 00005e68  8 @289 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  00000070 000008 400129e0 00005e70  8 @290 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  00000078 000008 400129e8 00005e78  8 @291 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  00000080 000008 400129f0 00005e80  8 @292 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  00000088 000008 400129f8 00005e88  8 @293 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  00000090 000008 40012a00 00005e90  8 @294 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  00000098 000008 40012a08 00005e98  8 @295 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  000000a0 000008 40012a10 00005ea0  8 @296 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  000000a8 000008 40012a18 00005ea8  8 @297 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  000000b0 000008 40012a20 00005eb0  8 @298 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  000000b8 000008 40012a28 00005eb8  8 @299 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  000000c0 000008 40012a30 00005ec0  8 @300 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  000000c8 000008 40012a38 00005ec8  8 @301 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  000000d0 000008 40012a40 00005ed0  8 @302 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  000000d8 000008 40012a48 00005ed8  8 @303 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  000000e0 000008 40012a50 00005ee0  8 @304 	MSL_C.PPCEABI.bare.VS.UC.a e_pow.o
+  000000e8 000018 40012a58 00005ee8  1 .sdata2 	MSL_C.PPCEABI.bare.VS.UC.a s_ldexp.o
+  000000e8 000008 40012a58 00005ee8  8 @66 	MSL_C.PPCEABI.bare.VS.UC.a s_ldexp.o
+  000000f0 000008 40012a60 00005ef0  8 @67 	MSL_C.PPCEABI.bare.VS.UC.a s_ldexp.o
+  000000f8 000008 40012a68 00005ef8  8 @68 	MSL_C.PPCEABI.bare.VS.UC.a s_ldexp.o
+
+
+.sbss2 section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+
+
+.bss section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+  00000000 00003e 40012a70 00005f00  1 .bss 	main.o 
+  00000000 00000c 40012a70 00005f00  4 command 	main.o 
+  0000000c 000032 40012a7c 00005f0c  4 sInitWord 	main.o 
+  0000003e 000002 40012ab0 00005f40  8 *fill*
+  00000040 000300 40012ab0 00005f40  1 .bss 	Sinwave.o 
+  UNUSED   000100 ........ ........    sinBeta2 Sinwave.o 
+  00000040 000100 40012ab0 00005f40  8 sinAlpha2 	Sinwave.o 
+  UNUSED   000100 ........ ........    sinBeta1 Sinwave.o 
+  00000140 000100 40012bb0 00006040  8 sinAlpha1 	Sinwave.o 
+  00000240 000100 40012cb0 00006140  8 SIN_DATA 	Sinwave.o 
+  00000340 000014 40012db0 00006240  1 .bss 	Serial.o 
+  00000340 000014 40012db0 00006240  4 buffSCI 	Serial.o 
+  00000354 000004 40012dc8 00006258  8 *fill*
+  00000358 00000c 40012dc8 00006258  1 .bss 	Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  00000358 00000c 40012dc8 00006258  4 fragmentinfo 	Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  00000364 000004 40012dd8 00006268  8 *fill*
+  00000368 000004 40012dd8 00006268  1 .bss 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+  00000368 000004 40012dd8 00006268  4 __SoftFPSCR 	Runtime.PPCEABI.VS.UC.a C:\CVSCheckOut\eppc_support\Do_Not_Distribute\zen_fpemu\Src\vle_ppcsfpe.o
+
+
+extabindex section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+  00000000 00000c 400051d0 000057f8  4 @552 	main.o 
+  0000000c 00000c 400051dc 000057f8  4 @558 	main.o 
+  00000018 00000c 400051e8 000057f8  4 @568 	main.o 
+  00000024 00000c 400051f4 000057f8  4 @596 	main.o 
+  00000030 00000c 40005200 000057f8  4 @84 	Sinwave.o 
+  0000003c 00000c 4000520c 000057f8  4 @108 	Sinwave.o 
+  00000048 00000c 40005218 000057f8  4 @140 	Sinwave.o 
+  00000054 00000c 40005224 000057f8  4 @23 	Serial.o 
+  00000060 00000c 40005230 000057f8  4 @6 	Exceptions.o 
+  0000006c 00000c 4000523c 000057f8  4 @13 	IntcInterrupts.o 
+  00000078 000030 40005248 000057f8  4 _eti_init_info 	Linker Generated Symbol File 
+  UNUSED   00000c ........ ........    @494 main.o 
+  UNUSED   00000c ........ ........    @576 main.o 
+  UNUSED   00000c ........ ........    @35 Sinwave.o 
+  UNUSED   00000c ........ ........    @62 Sinwave.o 
+  UNUSED   00000c ........ ........    @120 Sinwave.o 
+  UNUSED   00000c ........ ........    @224 Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   00000c ........ ........    @308 Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   00000c ........ ........    @409 Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   00000c ........ ........    @435 Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   00000c ........ ........    @807 Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   00000c ........ ........    @860 Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   00000c ........ ........    @871 Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   00000c ........ ........    @916 Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   00000c ........ ........    @964 Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   00000c ........ ........    @971 Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   00000c ........ ........    @1028 Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   00000c ........ ........    @1104 Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   00000c ........ ........    @1119 Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   00000c ........ ........    @1147 Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   00000c ........ ........    @1421 Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   00000c ........ ........    @1426 Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   00000c ........ ........    @1532 Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+  UNUSED   00000c ........ ........    @1539 Runtime.PPCEABI.VS.UC.a ExceptionPPC.o
+
+
+Memory map:
+                       Starting Size     File       S-Record
+                       address           Offset     Line
+                 .init 4000f000 000000bc 00000220       1060
+             .init_vle 4000f0bc 000001f4 000002dc       1070
+  .__exception_handlers 40010000 000000a8 000004d0       1095
+                 .text 40000000 00000000 00000580          0
+             .text_vle 40000000 0000462c 00000580          2
+               .rodata 40004630 00000b40 00004bb0        901
+                .ctors 40005170 00000008 000056f0       1045
+                .dtors 40005178 00000008 000056f8       1046
+                 extab 40005180 00000050 00005700       1047
+            extabindex 400051d0 000000a8 00005750       1051
+  .__uninitialized_intc_handlertable 40011000 00001340 00005800          0
+                 .data 40012340 00000580 00005800       1104
+                .sdata 400128c0 0000007c 00005d80       1175
+                 .sbss 40012940 0000002c 00005e00          0
+               .sdata2 40012970 00000100 00005e00       1182
+                .sbss2 40012a70 00000000 00005f00          0
+                  .bss 40012a70 0000036c 00005f00          0
+      .PPC.EMB.apuinfo 00013c70 00000000 00019b70          0
+         .debug_abbrev          00000195 00005f00
+           .debug_info          0000585c 00006095
+           .debug_line          00007b8f 0000b8f1
+            .debug_loc          00002d17 00013480
+       .debug_pubnames          00000ba6 00016197
+
+
+Linker generated symbols:
+       EXCEPTION_HANDLERS 40010000
+                  _f_init 4000f000
+              _f_init_rom 4000f000
+                  _e_init 4000f0bc
+              _f_init_vle 4000f0bc
+          _f_init_vle_rom 4000f0bc
+              _e_init_vle 4000f2b0
+  _f___exception_handlers 40010000
+_f___exception_handlers_rom 40010000
+  _e___exception_handlers 400100a8
+                  _f_text 40000000
+              _f_text_rom 40000000
+                  _e_text 40000000
+              _f_text_vle 40000000
+          _f_text_vle_rom 40000000
+              _e_text_vle 4000462c
+                _f_rodata 40004630
+            _f_rodata_rom 40004630
+                _e_rodata 40005170
+                 _f_ctors 40005170
+             _f_ctors_rom 40005170
+                 _e_ctors 40005178
+                 _f_dtors 40005178
+             _f_dtors_rom 40005178
+                 _e_dtors 40005180
+                  _fextab 40005180
+              _fextab_rom 40005180
+                  _eextab 400051d0
+             _fextabindex 400051d0
+         _fextabindex_rom 400051d0
+             _eextabindex 40005278
+_f___uninitialized_intc_handlertable 40011000
+_e___uninitialized_intc_handlertable 40012340
+                  _f_data 40012340
+              _f_data_rom 40012340
+                  _e_data 400128c0
+                 _f_sdata 400128c0
+             _f_sdata_rom 400128c0
+                 _e_sdata 4001293c
+                  _f_sbss 40012940
+                  _e_sbss 4001296c
+                _f_sdata2 40012970
+            _f_sdata2_rom 40012970
+                _e_sdata2 40012a70
+                 _f_sbss2 40012a70
+                 _e_sbss2 40012a70
+                   _f_bss 40012a70
+                   _e_bss 40012ddc
+              _stack_addr 40017800
+               _stack_end 40016800
+               _heap_addr 40015800
+                _heap_end 40016800
+             _nbfunctions 00000087
+           SIZEOF_HEADERS 00000220
+               _SDA_BASE_ 4001a8c0
+              _SDA2_BASE_ 4001a970
+           _ABS_SDA_BASE_ 4001a8c0
+          _ABS_SDA2_BASE_ 4001a970
