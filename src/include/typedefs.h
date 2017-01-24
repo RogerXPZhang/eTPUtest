@@ -5,9 +5,6 @@
  *========================================================================*
  * ORIGINAL AUTHOR: Jeff Loeliger (r12110)                                *
  * $Log: typedefs.h,v $
- * Revision 1.7  2007/05/02 22:46:00  dfreeland
- * Use latest web version
- *
  * Revision 1.4  2006/03/27 09:59:34  r47354
  * change __GHS__ to __ghs__. As per bug 13213
  *
@@ -76,10 +73,9 @@
     typedef volatile unsigned short vuint16_t;
 
     typedef signed int int32_t;
-    typedef unsigned long int uint32_t;
+    typedef unsigned int uint32_t;
     typedef volatile signed int vint32_t;
     typedef volatile unsigned int vuint32_t;
-    typedef unsigned char byte;
 
 #endif
 #endif

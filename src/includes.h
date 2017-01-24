@@ -13,11 +13,6 @@
 #include "GPIO.h"
 #include "SysTimer.h"
 #include "ADC.h"
-#include "etpu_util.h"
-//#include "etpu_set.h"
-#include "etpu_pwmmac.h"
-#include "etpu_pwmmac_auto.h"
-#include "etpu_mc_sin_auto.h"
-#include "inGear_etpu_gct.h"
+
 
 #endif

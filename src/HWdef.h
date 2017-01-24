@@ -6,6 +6,7 @@
 #define PIT2INT	303
 #define SCIAINT 146
 #define SIUINT15_4 50
+#define ETPUCH7	75
 
 #define CPUClkInMHz	64
 

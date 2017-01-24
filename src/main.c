@@ -1,4 +1,9 @@
 #include "includes.h"
+//#include "mpc563m_vars.h"
+#include "etpu_gct.h"
+#include "etpu_pwmmac.h"
+#include "etpu_util.h"
+
 
 
 #define SW_VERSION_MAJOR	0
@@ -10,6 +15,7 @@ vuint8_t Fault = FAULT_NO;
 int32_t speed_required_rpm = 0;
 
 char sInitWord[50];
+
 
 
 #define WAITFORTARGET	3
@@ -42,41 +48,6 @@ void disableIrq(void) {
   asm(" wrteei 0");	    	   		/* Enable external interrupts */
 }
 
-void etpu_globalexception_isr(void)
-{
-   int32_t  hsrr;
-
-   /* If Microcode Global Exception is asserted */
-   if (eTPU->MCR.B.MGE1 == 1)
-   {
-      Fault = FAULT_MICROCODE_GE;
-   }
-   /* If Illegal Instruction Flag is asserted */
-   else if(eTPU->MCR.B.ILF1 == 1)
-   {
-      Fault = FAULT_ILLEGAL_INSTR;
-   }
-   /* If SCM MISC Flag is asserted 
-      Note that this flag could be asserted on valid SCM contents on MCF523x 
-      due to a bug, see device errata */
-   else if(eTPU->MCR.B.SCMMISF == 1)
-   {
-      Fault = FAULT_MISC;
-   }
-
-   /* Reset required speed */
-   speed_required_rpm = 0;
-
-   /* Disable generation of PWM signals */
-   hsrr = fs_etpu_pwmmac_disable_3ph(PWMMAC0_MASTER,FS_ETPU_PWMMAC_PIN_LOW,FS_ETPU_PWMMAC_PIN_LOW);
-
-   if(hsrr==0)
-   {
-       /* Clear eTPU global interrupt flag */
-       eTPU->MCR.B.GEC = 1;
-   }
-}
-
 void printSCI(const char *str)
 {
 	uint32_t len;
@@ -85,110 +56,27 @@ void printSCI(const char *str)
 	SCI_transmitData(strOutput,len);
 }
 
-uint8_t sCommandParse(uint8_t *data, uint8_t *length)
-{
-	uint8_t ii,jj;
-	uint8_t tempPara[3];
-	
-	
-	/* initial command state */
-	command.commandState = WAITFORTARGET;
-	command.comID = COMMAND_NONE;
-	command.parameter = 0;
-	
-	
-	for(ii=0;ii<*length;ii++)
-	{
-		if(command.commandState==WAITFORTARGET)
-		{
-			switch(data[ii])
-			{
-				case 'i':
-				{
-					command.selTarget = INNERACTUATOR;
-					command.commandState = WAITFORCOMMAND;
-					break;
-				}
-				case 'o':
-				{
-					command.selTarget = OUTERACTUATOR;
-					command.commandState = WAITFORCOMMAND;
-					break;
-				}
-				case 'b':
-				{
-					command.selTarget = BOTHACTUATOR;
-					command.commandState = WAITFORCOMMAND;
-					break;
-				}
-				case 'e':
-				{
-					/* show encoder value */
-					command.comID = COMMAND_SHOW_ENCODER;
-					command.commandState = COMMANDCOMPLETE;
-					break;
-				}
-				default:
-					break;
-			}
-		}
-		else if(command.commandState==WAITFORCOMMAND)
-		{
-			switch(data[ii])
-			{
-				case 'z':
-				{
-					
-					command.comID = COMMAND_RUN;
-					command.commandState = WAITFORPARA;
-					break;	
-				}
-				case 'n':
-				{
-					command.comID = COMMAND_RUN_ON_POSITION;
-					command.commandState = WAITFORPARA;
-					break;						
-				}
-				case 'p':
-				{
-					command.comID = COMMAND_PLUG;
-					command.commandState = COMMANDCOMPLETE;	
-				}
-				default:
-					break;
-			}
-		}
-		else if(command.commandState==WAITFORPARA)
-		{
-			/* read the rest numbers */
-			uint8_t numOfData = 0;
-			for(;ii<*length;ii++)
-			{
-				if((data[ii]>='0')&&(data[ii]<='9'))
-				{
-					tempPara[numOfData++] = data[ii];
-				}
-			}
-			if(!numOfData)
-			{
-				for(jj=0;jj<numOfData;jj++)
-				{
-					command.parameter += pow(10,numOfData-jj-1);
-				}
-				command.commandState = COMMANDCOMPLETE;
-			}
-		}
-	}
-	return command.commandState;
-}
-
 void HWInitPowerOn(void)
 {
 	initSysclk();      /* Set sysclk = 80MHz running from PLL */	
 	//SIU.PCR[116].R = 0x0200; /* Set external interrupt PIN*/
+
 	//init_SinWAVE();
 	//initADC0();
 	//initGPIO();
+
+	SIU.PCR[121].R = 0x0E00;          /* Configure pad for signal ETPU_A[7] output*/
+	SIU.PCR[122].R = 0x0E00;          /* Configure pad for signal ETPU_A[8] output*/
+	SIU.PCR[123].R = 0x0E00;          /* Configure pad for signal ETPU_A[9] output*/
+	SIU.PCR[124].R = 0x0E00;          /* Configure pad for signal ETPU_A[10] output*/
+	SIU.PCR[125].R = 0x0E00;          /* Configure pad for signal ETPU_A[11] output*/
+	SIU.PCR[126].R = 0x0E00;          /* Configure pad for signal ETPU_A[12] output*/
+	SIU.PCR[127].R = 0x0E00;          /* Configure pad for signal ETPU_A[13] output*/
+	
+	SIU.PCR[114].R = 0x0200; 
+	
+	 
+	 
 }
 
 void ParaInitPowerOn(void)
@@ -205,7 +93,8 @@ void INTInitPowerOn(void)
 	INTC_InstallINTCInterruptHandler(PIT1_ISR,PIT1INT,2);
 	INTC_InstallINTCInterruptHandler(PIT0_ISR,PIT0INT,5);
 	INTC_InstallINTCInterruptHandler(PIT2_ISR,PIT2INT,2);
-	INTC_InstallINTCInterruptHandler(etpu_globalexception_isr,67,1);
+	//INTC_InstallINTCInterruptHandler(etpu_globalexception_isr,67,1);
+	//INTC_InstallINTCInterruptHandler(etpu_ch7_ISR,ETPUCH7,2);
 }
 
 
@@ -220,47 +109,55 @@ void showControlMenu(void)
 void main (void) 
 {
 	//uint32_t len;
+	int32_t error_code;
+	//uint16_t i;
+	
 	ParaInitPowerOn();
 	HWInitPowerOn();
 	INTInitPowerOn();
-	my_system_etpu_init();
+	//fs_etpu_interrupt_disable();
+	/*
+	for(i=0;i<256;i++)
+	{
+		etpuSineTable[i] = 0x7FFFFF*SIN_DATA_RAW[i]/255;
+	}
+	*/
+	setFrequencySinWAVE(80);
+	setAmplitudeSinWAVE(100);
+	
+	error_code = my_system_etpu_init();
 
 	enableIrq();
+
+
 	
 	my_system_etpu_start();
+	PIT.TIMER[0].TCTRL.R = 0X00000003;  //  Turn on TIMER 0 TIE and TEN to fire
 	
-	/* Print SW version and Sys info */
-	//len = sprintf(sInitWord,"SW Version: %d.%d\n",SW_VERSION_MAJOR,SW_VERSION_MINOR);
-	//SCI_transmitData(sInitWord,len);
+	//fs_etpu_pwmmac_update_vector(PWMMAC0_MASTER,0x7FFFFF,0);
 
-	//setAmplitudeSinWAVE(100);
-	//setFrequencySinWAVE(80);
 
 
 	for(;;)   //main loop
 	{
 		/* =======Super Fast Task========= */
 	
-		//sinWaveTask();
+		sinWaveTask();
 
 		
 		/* =======Every 10 ms task======== */
 		
 		if(10==cnt10msTask)
 		{
-			//GPIOScheduleTaskShort();	
-		/*==============================================*/
-		/*
-			uint8_t dataLen;
-			uint8_t dataSerialData[20];
+			//fs_etpu_pwmmac_update_duty_cycles(PWMMAC0_MASTER,etpuSineTable[OFFSETA++],etpuSineTable[OFFSETB++],etpuSineTable[OFFSETC++]);
 			
-			SCI_readDataTask(dataSerialData,&dataLen);
-			if(dataLen)
-			{
-				sCommandParse(dataSerialData,&dataLen);
-			}
-		*/
-		/*==============================================*/
+			//GPIOScheduleTaskShort();	
+			/*
+			tphaseA+=1000;
+			tphaseB+=1000;
+			tphaseC+=1000;
+			error_code = fs_etpu_pwmmac_update_duty_cycles(PWMMAC0_MASTER,tphaseA,tphaseB,tphaseC);
+			*/
 			cnt10msTask = 0;
 		}
 		
@@ -270,6 +167,7 @@ void main (void)
 		if(cnt100msTask)
 		{		
 			//GPIOScheduleTaskLong();
+			
 			cnt100msTask = 0;
 		}
 	}
